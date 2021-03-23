@@ -14,6 +14,7 @@ body{
     background-repeat: repeat;
     padding: 0;
     background-size: 50vh;
+    overflow: hidden;
 }
 .desktop{
     position:absolute;
@@ -23,20 +24,19 @@ body{
     margin: auto;
     padding: 10vh 0 0 0;
     align-items: center; 
+    overflow: hidden;
 }
 .btnInicio{ 
     position: absolute;
-    width: 12vw;
-    height: 18vh;
-    top: 55vh;
-    left: 42.5vw;
-    background-image: url("images/btn.png");
+    width: 14vw;
+    height: 28vh;
+    top: 53vh;
+    left: 41vw;
+    background: url("images/btn12.png");
     background-size:100% 100% ;
     background-repeat: no-repeat;
     border-radius: 50%;
-    background-color: rgba(44, 129, 179, 0.767);
-    box-shadow: 0 0 15px 10px rgb(13, 4, 95);
-    border-color: rgba(107, 176, 216, 0.767);
+    border: indigo;
 }
 .mobileOne{
     width: 100vw;
@@ -187,56 +187,84 @@ header label:hover{
       margin: 0;
 }
 }
-.contenidoInicio{
+.contentHome{
     display: flex;
+    position: absolute;
     width: 100vw;
-    height: 55vw;
-    margin:auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: rgb(255, 255, 255);
+    height: 150vh;
+    background: url("images/purple.png");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    background-size: 100% 100%;
+    flex-flow: column wrap;
+    color: white;
+    font-weight: bold;
 }
 .item1{
+    position: absolute;
     width: 23vw;
-    height: 28vh;
-    background-color: purple;
-    text-align:center ;
-    margin-left: 2vw;
-    margin-right: 5vw;
-    margin-top: 6vh ;
-    align-self: flex-start;
-    border-radius: ;
-    
+    height: 35vh;
+    background-color: #3e004d98;
+    left: 13vw;
+    top: 8vh;
+    padding: 2vh 0;
+    align-items: flex-start;
+    text-align: center;
+    border-radius: 20px;
+}
+#imgInicio{
+    width: 23vw;
+    height: 39vh;
 }
 .item2{
+    position: absolute;
     width: 23vw;
-    height: 28vh;
-    background-color: purple;
-    text-align:center ;
-    margin-top: 6vh ;
-    align-self: flex-start;
+    height: 35vh;
+    background-color: #3e004d98;
+    right: 15vw;
+    top:  8vh;
+    align-items: flex-start;
+    text-align: center;
+    padding: 2vh 1vw;
+    border-radius: 20px;
+}
+#imgInicio2{
+    width: 20vw;
+    height: 33vh;
+    margin-top: 2vh;
+    border-radius: 10px;
+
 }
 .item3{
+    position: absolute;
     width: 23vw;
-    height: 28vh;
-    background-color: purple;
-    text-align:center ;
-    margin-left: 2vw;
-    margin-right: 5vh;
-    align-self: flex-end;
-    margin-bottom: 3vh;
+    height: 35vh;
+    background-color: #3e004d98;
+    left: 13vw;
+    top: 99vh;
+    align-items: flex-end;
+    text-align: center;
+    padding: 2vh 1vw;
+    border-radius: 20px;
 }
 .item4{
+    position: absolute;
     width: 23vw;
-    height: 28vh;
-    background-color: purple;
-    text-align:center ;
-    align-self: flex-end;
-    margin-bottom: 3vh;
+    height: 35vh;
+    background-color: #3e004d98;
+    right: 15vw;
+    top: 99vh;
+    padding: 2vh 1vw;
+    align-items: flex-end;
+    text-align: center;
+    border-radius: 20px;
 }
 .gif{
-    width: 28vw;
-    height: 56vh;
-    margin-left: 61vh;
-    margin-right: 50vh;
+    position: absolute;
+    width: 27vw;
+    height: 55vh;
+    right: 38vw;
+    top: 47vh;
+    align-items: center;
 }

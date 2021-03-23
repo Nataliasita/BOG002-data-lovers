@@ -13,6 +13,8 @@ function pages () {
     botonInicio.onclick = function (){
         document.querySelector(".interfazInicial").style.display="none";
         document.querySelector(".header").style.display="block"; 
+        document.querySelector(".contentHome").style.display="block";
+        
     }
 
 }
