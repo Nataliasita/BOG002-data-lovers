@@ -14,7 +14,11 @@ function pages () {
         document.querySelector(".interfazInicial").style.display="none";
         document.querySelector(".header").style.display="block"; 
         document.querySelector(".contentHome").style.display="block";
-        
+        document.querySelector(".footer").style.display="block";  
+    
     }
 
 }
+
+
+
