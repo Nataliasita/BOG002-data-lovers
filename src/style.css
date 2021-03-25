@@ -71,28 +71,37 @@ header{
 } 
     @media (min-width: 630px) {
       header {
-          background: url("images/bicho.jpg") top right no-repeat, url("images/egg.jpg") top left no-repeat;
-          background-size: 25% 81%;
+          background: url("images/061.png") top right no-repeat, url("images/quagsire.png") top left no-repeat;
+          background-size: 17% 81%;
+          background-color:rgba(8, 107, 255, 0.521);
+          margin-left: -20px;
+
     }
     }
     @media (min-width: 1200px) {
       header {
-          background: url("images/bicho.jpg") top right no-repeat, url("images/egg.jpg") top left no-repeat;
-          background-size: 25% 81%;
+          background: url("images/061.png") center right no-repeat, url("images/quagsire.png") center left no-repeat;
+          background-size: 17.2% 60%;
+          background-color: rgba(8, 107, 255, 0.521);
+          margin-left: -20px;
+        
     }
     }
 .banner{
-    width: 50vw;
-    height: 40vh;
+    width: 71.1vw;
+    height: 49vh;
     min-height: 10vh;
-    max-height: 40vh;
+    max-height: 50vh;
     margin: auto;
+    margin-left: 14.2vw;
     background-attachment: inherit;
     background-repeat: repeat;
     background-size: 100% 100%;
     animation: banner 10s infinite;
     justify-content: center;
     object-fit: cover;
+    border-left: rgb(254, 255, 247) solid 17px;
+    border-right: rgb(254, 255, 247) solid 17px;
 }
     @keyframes banner{
       0% ,30%
@@ -182,7 +191,6 @@ header label:hover{
 }
 .container ul{
       flex-direction: column;
-      overflow: hidden;
 }
 .container li{
       border-top: 1px solid #ffff;
@@ -192,6 +200,7 @@ header label:hover{
 }
 #btnMenu:checked ~ .container{
       margin: 0;
+    
     }
     }
 .contentHome{
@@ -212,7 +221,7 @@ header label:hover{
     height: 32vh;
     background-color: #3e004d98;
     left: 13vw;
-    top: 58vh;
+    top: 68vh;
     padding: 3vh 0;
     align-items: flex-start;
     text-align: center;
@@ -220,7 +229,7 @@ header label:hover{
 }
 #imgInicio{
     width: 21vw;
-    margin-top: 2vh;
+    margin-top: 1vh;
     height: 30vh;
 }
 .item2{
@@ -229,7 +238,7 @@ header label:hover{
     height: 32vh;
     background-color: #3e004d98;
     right: 15vw;
-    top:  58vh;
+    top:  68vh;
     align-items: flex-start;
     text-align: center;
     padding: 3vh 1vw;
@@ -268,54 +277,109 @@ header label:hover{
 .gif{
     position: absolute;
     width: 27vw;
-    height: 57vh;
-    right: 38vw;
+    height: 59vh;
+    right: 37vw;
     top: 89vh;
     align-items: center;
 }
-@media (max-width:540px){
+.footer1{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    background: #3e004d98 ;
+    top:190vh;
+}
+@media (max-width:500px){
     .contentHome{
      margin: 0;
-     max-height: 100vh;
+     max-height: 89vh;
+     font-size: calc(0.65em + 0.65vw);
     }
     .contentHome article {
         height: 16vh;
         width: 33vw;
+        padding: 1vh 1vw;
+        border-radius: 10px;
     }
     #imgInicio{
-        height: 19vh;
+        height: 15vh;
         width: 25vw;
+        margin-top: 0.5vh;
     }
     #imgInicio2{
         height: 13vh;
         width: 25vw;
+        margin-top: 2vh;
     }
     .item1 {
         top: 38vh;
         left: 5vw;
-
     }
     .item2{
         top: 38vh;
         right: 10vw;
     }
     .item3 {
-        top: 103vh;
+        top: 101vh;
         left: 5vw;
     }
     .item4{
-        top: 103vh;
+        top: 101vh;
         right: 10vw;
     }
     .gif{
         width: 37vw;
         height: 47vh;
-        right: 37vw;
-        top: 59vh;
+        right: 35vw;
+        top: 54vh;
+    }
+    .footer1{
+        align-content: flex-end;
+        top: 123vh;
     }
     }
-    footer{
-        width: 100vw;
-        height: 10vh;
-        background: #3e004d98 ;
+.contentPokedex{
+    display: flex;
+    width: 100vw;
+    height: 138vh;
+    background: url("images/fondo2.png");
+    background-repeat: no-repeat;
+    padding: 0;
+    background-size: 100% 100%;
+    flex-flow: column wrap;
+    color: white;
+    font-weight: bold;
     }
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.card{
+    background-color: red;
+    color: saddlebrown;
+    transition: all 0,3 ease-out;
+}
+.card img{
+    height: auto;
+    width: 100wv;
+}
+card figcaption{
+    padding: 1rem;
+}
+.filter{
+    visibility: hidden;
+    opacity: 0;
+    order:1;
+}
+
+
+
+
+
+.footer2{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    background: #dd000098 ;
+    top:190vh;
+        }
