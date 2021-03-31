@@ -342,44 +342,35 @@ header label:hover{
 .contentPokedex{
     display: flex;
     width: 100vw;
-    height: 138vh;
-    background: url("images/fondo2.png");
-    background-repeat: no-repeat;
     padding: 0;
-    background-size: 100% 100%;
     color: white;
     font-weight: bold;
     }
 .pokemon-container{
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 80px auto 80px; 
-    column-gap: 10px;
-    row-gap: 15px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 22vw 22vw 22vw 22vw 22vw ;
     color: black;
-    border: black;
 }  
-.card{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 20px;
+.cards{
+    background: yellow;
     text-align: center;
-    column-count:6;
 }
-card figcaption{
-    padding: 1rem;
+.namePoke{
+    color: rgb(0, 8, 126);
 }
-
-#imgPoke{
-    width: 50px;
-    height: 50px;
+.imgPoke{
+    width: 11vw;
+    height: 21vh;
 }
-
+.numPoke{
+    color: black;
+}
 
 .footer2{
     position: absolute;
     width: 100vw;
     height: 10vh;
-    background: #dd000098 ;
     top:190vh;
     }

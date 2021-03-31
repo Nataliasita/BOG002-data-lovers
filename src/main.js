@@ -34,24 +34,32 @@ const infoGeneral = data.pokemon;
 //}
     
 const pokemon_container =document.getElementById("pokemon-container");
-const card =document.getElementById("card");
+//const card =document.getElementById("card");
 
 infoGeneral.forEach (poke => {
-    const fig = document.createElement("h4");
-    fig.textContent = poke.name;
-    card.appendChild(fig);
-    var Image= document.createElement("img");
-    Image.src=poke.img;
-    card.appendChild(Image);
-    const numero = document.createElement("p");
-    numero.textContent = poke.num;
-    card.appendChild(numero);
-    const Type1 =document.createElement("p");
-    Type1.textContent = poke.type[0];
-    card.appendChild(Type1);
-    const Type2 =document.createElement("p");
-    Type2.textContent = poke.type[1];
-    card.appendChild(Type2);
+    const card_pokemon =document.createElement("figure");
+    card_pokemon.className ="cards";
+    pokemon_container.appendChild(card_pokemon);
+    const name_pokemon = document.createElement("h4");
+    name_pokemon.textContent = poke.name;
+    name_pokemon.className ="namePoke";
+    card_pokemon.appendChild(name_pokemon);
+    const image_pokemon= document.createElement("img");
+    image_pokemon.src=poke.img;
+    image_pokemon.className ="imgPoke";
+    card_pokemon.appendChild(image_pokemon);
+    const num_pokemon = document.createElement("p");
+    num_pokemon.textContent = poke.num;
+    num_pokemon.className = "numPoke";
+    card_pokemon.appendChild(num_pokemon);
+    const type1_pokemon =document.createElement("p");
+    type1_pokemon.textContent = poke.type[0];
+    type1_pokemon.className = "typesPoke";
+    card_pokemon.appendChild(type1_pokemon);
+    const type2_pokemon =document.createElement("p");
+    type2_pokemon.textContent = poke.type[1];
+    type2_pokemon.className = "typesPoke";
+    card_pokemon.appendChild(type2_pokemon);
 })
 
 //const pokeName =[]
