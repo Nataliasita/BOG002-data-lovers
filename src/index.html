@@ -58,29 +58,82 @@
           
           <section class="contentPokedex" id="contentPokedex" style= "display:none;">
 
-            <input type="search" placeholder="Nombre o #" class="card-filter">
+            
+            <form name="ordenar" id="orden">
+              <fieldset>
+                <legend>Ordenar Por:</legend>
+                 <select name="" id="">
+                    <option value="1" selected>Todos</option>
+                    <option value="2">A-Z</option>
+                     <option value="3">Z-A</option>
+                 </select>
+              </fieldset>
+            </form>
+            
+            
 
-            <article class="cards"> 
+            <form name="filtrar" id="filtroTipo">
+              
+                <legend>Filtrar Por:</legend>
+             
+                 <select name="typesSelecc" id="types">
+                     <option value="0" selected>Todos</option>
+                     <option value="1">Acero</option>
+                     <option value="2">Agua</option>
+                     <option value="3">Bicho</option>
+                     <option value="4">Dragon</option>
+                     <option value="5">Electrico</option>
+                     <option value="6">Fantasma</option>
+                     <option value="7">Fuego</option>
+                     <option value="8">Hada</option>
+                     <option value="9">Hielo</option>
+                     <option value="10">Lucha</option>
+                     <option value="11">Normal</option>
+                     <option value="12">Planta</option>
+                     <option value="13">Psiquico</option>
+                     <option value="14">Roca</option>
+                     <option value="15">Siniestro</option>
+                     <option value="16">Tierra</option>
+                     <option value="17">Veneno</option>
+                     <option value="18">Volador</option>
+                     <option value="19">No definido</option>
+                 </select>
 
-              <figure class="card">
-                <img src="" alt="">
-                <figcaption>informacion</figcaption>
-              </figure>
-              <figure class="card">
-              </figure>
-              <figure class="card">
-              </figure>
+            <Input type=button value="Filtrar" onclick="seleccTypes()" ></Input>
 
-            </article>
+            </form>
+            
+        <div class= container>  
+          <h1>Pokedex</h1>
+          <hr>
+          <div class="row" id="items"></div>
 
+        </div>  
+        
+        
 
+          <article id="pokemon-container" class="pokemon-container"> 
 
+            <figure id="card" class="card">
+            
+
+              <canvas id="imgPoke"></canvas>
+
+            </figure>
+
+          </article>
+
+        
 
 
             
-            <footer class="footer2" style= "display:none;">
+        
+        
+            
+
+             <footer class="footer2" style= "display:none;">
            
-            </footer>
+             </footer>
 
           </section>
         
