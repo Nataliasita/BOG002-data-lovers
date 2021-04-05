@@ -21,34 +21,7 @@ import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 
 const infoGeneral = data.pokemon;
-// eslint-disable-next-line no-console
-//console.log(example,data);
 
-
-//console.log("data: ",data)
-
-//console.log("data.pokemon: ",data.pokemon)
-
-//console.log("data.pokemon[0]: ",data.pokemon[0])
-
-//console.log("data.pokemon[0].name: ",data.pokemon[0].name)
-
-
-//const general= [data.pokemon];
-//for (let i = 0; i < general.length; i++){
-//  console.log(general[i]);
-//}
-
-
-//let tipo = [];
-
-//for (let i = 0; i < infoPokemon.length; i++){
-//    var pokemontype = infoPokemon [i];
-//   if () {
-//      tipo.push(pokemontype)
-//    }
-//}
-    
 const pokemon_container =document.getElementById("pokemon-container");
 //const card =document.getElementById("card");
 
@@ -87,8 +60,78 @@ infoGeneral.forEach (poke => {
     atributes_pokemon_weight.textContent ="Peso : "+ poke.size.weight;
     atributes_pokemon_weight.className = "atributes";
     information_pokemon.appendChild(atributes_pokemon_weight);
-    
 })
+
+const pokemon_container_descendentes =document.getElementById("pokemon-container-descendentes");
+
+let gen =infoGeneral.reverse();
+
+gen.forEach (poke => {
+    const card_pokemon =document.createElement("figure");
+    card_pokemon.className ="cards";
+    pokemon_container_descendentes.appendChild(card_pokemon);
+    const name_pokemon = document.createElement("h4");
+    name_pokemon.textContent = poke.name;
+    name_pokemon.className ="namePoke";
+    card_pokemon.appendChild(name_pokemon);
+    const image_pokemon= document.createElement("img");
+    image_pokemon.src=poke.img;
+    image_pokemon.className ="imgPoke";
+    card_pokemon.appendChild(image_pokemon);
+    const num_pokemon = document.createElement("p");
+    num_pokemon.textContent = poke.num;
+    num_pokemon.className = "numPoke";
+    card_pokemon.appendChild(num_pokemon);
+    const information_pokemon =document.createElement("figcaption");
+    information_pokemon.className ="information";
+    card_pokemon.appendChild(information_pokemon);
+    const type1_pokemon =document.createElement("p");
+    type1_pokemon.textContent = "Tipo : "+ poke.type[0];
+    type1_pokemon.className = "typesPoke";
+    information_pokemon.appendChild(type1_pokemon);
+    const type2_pokemon =document.createElement("p");
+    type2_pokemon.textContent =poke.type[1];
+    type2_pokemon.className = "typesPoke2";
+    information_pokemon.appendChild(type2_pokemon);
+    const atributes_pokemon_height =document.createElement("p");
+    atributes_pokemon_height.textContent = "Altura : "+ poke.size.height;
+    atributes_pokemon_height.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_height);
+    const atributes_pokemon_weight =document.createElement("p");
+    atributes_pokemon_weight.textContent ="Peso : "+ poke.size.weight;
+    atributes_pokemon_weight.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_weight);
+})
+
+order_pokemon();
+
+function order_pokemon (){
+
+    let order_general = document.getElementById("order");
+    order_general.onclick =function (){
+        document.querySelector(".interfazInicial").style.display="none";
+        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".contentHome").style.display="none"; 
+        document.querySelector(".footer1").style.display="none"; 
+        document.querySelector(".contentPokedex").style.display="block";
+        document.querySelector(".pokemon-container").style.display="grid";
+        document.querySelector(".pokemon-container-descendentes").style.display="none";
+    }
+    let order_descendentes = document.getElementById("descendentes");
+    order_descendentes.onclick =function (){
+        document.querySelector(".interfazInicial").style.display="none";
+        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".contentHome").style.display="none"; 
+        document.querySelector(".footer1").style.display="none"; 
+        document.querySelector(".contentPokedex").style.display="block";
+        document.querySelector(".pokemon-container").style.display="none";
+        document.querySelector(".pokemon-container-descendentes").style.display="grid";
+    }
+
+}
+
+
+
 
 
 // funciones de filtro
@@ -177,22 +220,5 @@ function pages () {
         document.querySelector(".contentPokedex").style.display="block";
         document.querySelector(".footer2").style.display="block"; 
     }
+
 }
-
-
-//generalpoke();
-//function generalpoke() {
-//    const pokemon_container =document.getElementById("pokemon-container");
-//    const poke_name = document.querySelector(".poke_name");
-//}
-
-
-
-
-//for (let i = 0; i < infoGeneral.length; i++){
-//    let pokeName = infoGeneral[i].name;
-//    let pokeNum = infoGeneral[i].num;
-//    let pokeImg = infoGeneral[i].img;
-//    let poketype1 = infoGeneral[i].type[0];
-//    let poketype2 = infoGeneral[i].type[1];
-//}

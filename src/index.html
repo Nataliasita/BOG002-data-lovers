@@ -62,17 +62,23 @@
 
          
           
-                     <div id="pokemon-container" class="pokemon-container"> 
+                     <div id="pokemon-container" class="pokemon-container" style= "display:none;"> 
 
                      </div>
+
+                     <div id="pokemon-container-descendentes" class="pokemon-container-descendentes" style= "display:none;"> 
+
+                    </div>
 
               <div class="contenedor_ordenar" style="display: block;">
              
                 <h4>Ordenar por Numero:</h4>
 
                     <form class="ordenar"> 
-                      <a href="#"><input type="checkbox">Desde #1 hasta #251</a><br>
-                      <a href="#"><input type="checkbox">Desde #251 hasta #1</a>
+                      <ul>
+                      <li id="order"><a href="#pokemon-container"><input type="checkbox"> Desde n° 1 hasta n° 251</a></li><br>
+                      <li id="descendentes"><a href="#pokemon-container-descendentes"><input type="checkbox">Desde n° 251 hasta n° 1</a></li>
+                      </ul>
                     </form>
              </div>
         
@@ -81,8 +87,9 @@
                  <h4>Filtrar por Tipo:</h4><br>
 
                    <form class="Filtrar">
-                        <a href="#"><input type="checkbox">Todos</a><br>
-                        <a href="#"><input type="checkbox">Acero</a><br>
+                     <ul>
+                        <li><a href="#"><input type="checkbox">Todos</a><br></li>
+                        <li><a href="#"><input type="checkbox">Acero</a><br></li>
                         <a href="#"><input type="checkbox">Agua</a><br>
                         <a href="#"><input type="checkbox">Bicho</a><br>
                         <a href="#"><input type="checkbox">Dragon</a><br>
@@ -100,6 +107,7 @@
                         <a href="#"><input type="checkbox">Tierra</a><br>
                         <a href="#"><input type="checkbox">Veneno</a><br>
                         <a href="#"><input type="checkbox">Volador</a><br>
+                      </ul>  
                     </form>
              </div>  
            

@@ -359,7 +359,20 @@ header label:hover{
 .pokemon-container{
     display: grid;
     height: 8vh;
-    width: 84vw;
+    width: 70vw;
+    column-gap: 1.4vw;
+    row-gap: 2vh;
+    grid-template-columns: repeat(5,14vw);
+    grid-template-rows: repeat(51, 47.4vh);
+    color: black;
+    margin:2vh 0 0 4vw;
+    padding: 0; 
+    margin-left: 20vw; 
+}
+.pokemon-container-descendentes{
+    display: grid;
+    height: 8vh;
+    width: 70vw;
     column-gap: 1.4vw;
     row-gap: 2vh;
     grid-template-columns: repeat(5,14vw);
@@ -429,7 +442,7 @@ header label:hover{
 .contenedor_filtro{
     display: flex;
     width: 13vw;
-    height: 73vh;
+    height: 70vh;
     background: #CB2438;
     margin-left: 3vw;
     padding: 0;
@@ -463,9 +476,9 @@ header label:hover{
 .contenedor_ordenar{
     display: flex;
     width: 14vw;
-    height: 13vh;
+    height: 25vh;
     background: #CB2438;
-    margin-left: 3vw;
+    margin-left: 2vw;
     padding: 0;
     border-radius: 10px;
     bottom: 20px;
@@ -484,7 +497,7 @@ header label:hover{
     position: relative;
     background: #EBEBEB;
     padding: 0;
-    height: 12vh;
+    height: 16vh;
     width: 14vw;
     border-radius: 5px;
 
@@ -492,5 +505,9 @@ header label:hover{
 .contenedor_ordenar a{
     text-decoration: none;
     color: #CB2438;
+    padding: 0;
+}
+.contenedor_ordenar li{
+    list-style: none;
     padding: 0;
 }
