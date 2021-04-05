@@ -439,40 +439,6 @@ header label:hover{
 .atributes{
     margin: 0;
 }
-.contenedor_filtro{
-    display: flex;
-    width: 13vw;
-    height: 70vh;
-    background: #CB2438;
-    margin-left: 3vw;
-    padding: 0;
-    border-radius: 10px;
-    margin-top: 20vh;
-}
-.contenedor_filtro h4{
-    position: relative;
-    text-align: left;
-    width: 15vw;
-    height: 1vh;
-    padding: 0;
-    color: white;
-    margin-left: 1vw;
-    top: 1vh;
- 
-}
-.contenedor_filtro form{
-    position: relative;
-    background: #EBEBEB;
-    padding: 0;
-    height: 62vh;
-    width: 13vw;
-    border-radius: 5px;
-}
-.contenedor_filtro a{
-    text-decoration: none;
-    color: #CB2438;
-    padding: 0;
-}
 .contenedor_ordenar{
     display: flex;
     width: 14vw;
@@ -500,7 +466,6 @@ header label:hover{
     height: 16vh;
     width: 14vw;
     border-radius: 5px;
-
 }
 .contenedor_ordenar a{
     text-decoration: none;
@@ -510,4 +475,222 @@ header label:hover{
 .contenedor_ordenar li{
     list-style: none;
     padding: 0;
+}
+.contenedor_filtro{
+    display: flex;
+    width: 13vw;
+    height: 77vh;
+    background: #CB2438;
+    margin-left: 3vw;
+    padding: 0;
+    border-radius: 10px;
+    margin-top: 20vh;
+}
+.contenedor_filtro h4{
+    position: relative;
+    text-align: left;
+    width: 15vw;
+    height: 1vh;
+    padding: 0;
+    color: white;
+    margin-left: 1vw;
+    top: 1vh;
+}
+.contenedor_filtro form{
+    position: relative;
+    background: #EBEBEB;
+    padding: 0;
+    height: 66vh;
+    width: 13vw;
+    border-radius: 5px;
+}
+.contenedor_filtro a{
+    text-decoration: none;
+    color: #CB2438;
+    padding: 0;
+}
+.contenedor_filtro li{
+    list-style: none;
+    padding: 0;
+}
+.allTypes{
+    display: grid;
+    height: 8vh;
+    width: 70vw;
+    column-gap: 1.4vw;
+    row-gap: 2vh;
+    grid-template-columns: repeat(1,80vw);
+    grid-template-rows: repeat(100, 47.4vh);
+    color: black;
+    margin:2vh 0 0 4vw;
+    padding: 0; 
+    margin-left: 10vw; 
+    
+}
+.pokemon-container-typeSteel{
+    display: grid;
+    height: 8vh;
+    width: 70vw;
+    column-gap: 1.4vw;
+    row-gap: 2vh;
+    grid-template-columns: repeat(5,14vw);
+    grid-template-rows: repeat(51, 47.4vh);
+    color: black;
+    margin:2vh 0 0 4vw;
+    padding: 0; 
+    margin-left: 12vw; 
+    flex-wrap: wrap;
+
+}
+.cardsSteel{
+    background: #b1a99a9a;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}   
+.namePokeSteel{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin:0 0 1vh 0;
+    background: #a8a7a7;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px; 
+}
+.numPokeSteel{
+    margin:0;
+    width:5vw ;
+    margin-left: 4.5vw;
+    color: rgb(255, 255, 255);
+    background: #a8a7a7;
+    padding: 0.7vh 0.7vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+}
+.informationSteel{
+    display: flex;
+    width: 11vw;
+    height:12.1vh;
+    font-size: 14px;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    margin-left: 1.5vw;
+    align-items: stretch;
+    background: #ebe9e5c2; 
+    border-radius: 5px;
+    color: #303030;
+}
+.pokemon-container-typeWater{
+    display: grid;
+    height: 8vh;
+    width: 70vw;
+    column-gap: 1.4vw;
+    row-gap: 2vh;
+    grid-template-columns: repeat(5,14vw);
+    grid-template-rows: repeat(51, 47.4vh);
+    color: black;
+    margin:2vh 0 0 4vw;
+    padding: 0; 
+    margin-left: 12vw; 
+}
+.cardsWater{
+    background: #2949b39a;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}   
+.namePokeWater{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin:0 0 1vh 0;
+    background: #0202c0;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px; 
+}
+.numPokeWater{
+    margin:0;
+    width:5vw ;
+    margin-left: 4.5vw;
+    color: rgb(255, 255, 255);
+    background: #0202c0;
+    padding: 0.7vh 0.7vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+}
+.informationWater{
+    display: flex;
+    width: 11vw;
+    height:12.1vh;
+    font-size: 14px;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    margin-left: 1.5vw;
+    align-items: stretch;
+    background: #b7c4ffc2; 
+    border-radius: 5px;
+    color: #040257;
+}
+.pokemon-container-typeFire{
+    display: grid;
+    height: 8vh;
+    width: 70vw;
+    column-gap: 1.4vw;
+    row-gap: 2vh;
+    grid-template-columns: repeat(5,14vw);
+    grid-template-rows: repeat(51, 47.4vh);
+    color: black;
+    margin:2vh 0 0 4vw;
+    padding: 0; 
+    margin-left: 20vw; 
+}
+.cardsFire{
+    background: #ffd3809a;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}   
+.namePokeFire{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin:0 0 1vh 0;
+    background: #f38b14;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px; 
+}
+.numPokeFire{
+    margin:0;
+    width:5vw ;
+    margin-left: 4.5vw;
+    color: rgb(255, 255, 255);
+    background: #f38b14;
+    padding: 0.7vh 0.7vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+}
+.informationFire{
+    display: flex;
+    width: 11vw;
+    height:12.1vh;
+    font-size: 14px;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    margin-left: 1.5vw;
+    align-items: stretch;
+    background: #fff1d4c2; 
+    border-radius: 5px;
+    color: #520101;
 }

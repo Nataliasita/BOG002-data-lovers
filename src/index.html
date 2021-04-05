@@ -58,17 +58,37 @@
           
           <section class="contentPokedex" id="contentPokedex" style= "display:none;">
 
-                 <h1 class="pokedex">Pokedex---------------</h1>
+                        <h1 class="pokedex">Pokedex---------------</h1>
 
-         
+                   <!-- contenedores pokemon por orden -->
           
                      <div id="pokemon-container" class="pokemon-container" style= "display:none;"> 
-
                      </div>
 
                      <div id="pokemon-container-descendentes" class="pokemon-container-descendentes" style= "display:none;"> 
-
                     </div>
+
+                  <!-- contenedores pokemon por tipo-->
+
+                  <div class="allTypes" style= "display:none;" >
+
+                          <div id="pokemon-container-typeSteel" class="pokemon-container-typeSteel" style= "display:none;">  
+                          </div> 
+
+                          
+                          <div id="pokemon-container-typeWater" class="pokemon-container-typeWater">  
+                          </div> 
+
+
+                          <div id="pokemon-container-typeFire" class="pokemon-container-typeFire" style= "display:none;">  
+                          </div> 
+
+
+
+                  </div>
+
+
+
 
               <div class="contenedor_ordenar" style="display: block;">
              
@@ -80,43 +100,47 @@
                       <li id="descendentes"><a href="#pokemon-container-descendentes"><input type="checkbox">Desde n° 251 hasta n° 1</a></li>
                       </ul>
                     </form>
-             </div>
+               </div>
         
-            <div class="contenedor_filtro" style="display: block;">
+                  <div class="contenedor_filtro" style="display: block;">
 
-                 <h4>Filtrar por Tipo:</h4><br>
+                    <h4>Filtrar por Tipo:</h4><br>
 
-                   <form class="Filtrar">
-                     <ul>
-                        <li><a href="#"><input type="checkbox">Todos</a><br></li>
-                        <li><a href="#"><input type="checkbox">Acero</a><br></li>
-                        <a href="#"><input type="checkbox">Agua</a><br>
-                        <a href="#"><input type="checkbox">Bicho</a><br>
-                        <a href="#"><input type="checkbox">Dragon</a><br>
-                        <a href="#"><input type="checkbox">Electrico</a><br>
-                        <a href="#"><input type="checkbox">Fantasma</a><br>
-                        <a href="#"><input type="checkbox">Fuego</a><br>
-                        <a href="#"><input type="checkbox">Hada</a><br>
-                        <a href="#"><input type="checkbox">Hielo</a><br>
-                        <a href="#"><input type="checkbox">Lucha</a><br>
-                        <a href="#"><input type="checkbox">Normal</a><br>
-                        <a href="#"><input type="checkbox">Planta</a><br>
-                        <a href="#"><input type="checkbox">Psiquico</a><br>
-                        <a href="#"><input type="checkbox">Roca</a><br>
-                        <a href="#"><input type="checkbox">Siniestro</a><br>
-                        <a href="#"><input type="checkbox">Tierra</a><br>
-                        <a href="#"><input type="checkbox">Veneno</a><br>
-                        <a href="#"><input type="checkbox">Volador</a><br>
-                      </ul>  
-                    </form>
-             </div>  
-           
+                       <form class="Filtrar">
+                          <ul>
+                           <br>
+                           <li id="todos"><a href="#"><input type="checkbox">Todos</a></li>
+                           <li id="acero"><a href="#pokemon-container-typeSteel"><input type="checkbox">Acero</a></li>
+                           <li id="agua"><a href="#pokemon-container-typeWater"><input type="checkbox">Agua</a></li>
+                           <li><a href="#"><input type="checkbox">Bicho</a></li>
+                           <li><a href="#"><input type="checkbox">Dragon</a></li>
+                           <li><a href="#"><input type="checkbox">Electrico</a></li>
+                           <li><a href="#"><input type="checkbox">Fantasma</a></li>
+                           <li><a href="#"><input type="checkbox">Fuego</a></li>
+                           <li><a href="#"><input type="checkbox">Hada</a></li>
+                           <li><a href="#"><input type="checkbox">Hielo</a></li>
+                           <li><a href="#"><input type="checkbox">Lucha</a></li>
+                           <li><a href="#"><input type="checkbox">Normal</a></li>
+                           <li><a href="#"><input type="checkbox">Planta</a></li>
+                           <li><a href="#"><input type="checkbox">Psiquico</a></li>
+                           <li><a href="#"><input type="checkbox">Roca</a></li>
+                           <li><a href="#"><input type="checkbox">Siniestro</a></li>
+                           <li><a href="#"><input type="checkbox">Tierra</a></li>
+                           <li><a href="#"><input type="checkbox">Veneno</a></li>
+                           <li><a href="#"><input type="checkbox">Volador</a></li>
+                          <br>
+                          </ul>  
+                        </form>
+
+                  </div>  
+             
+             
 
         
 
-             <footer class="footer2" style= "display:none;">
+                 <footer class="footer2" style= "display:none;">
            
-             </footer>
+                 </footer>
 
           </section>
         

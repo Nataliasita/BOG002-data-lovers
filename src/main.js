@@ -64,9 +64,9 @@ infoGeneral.forEach (poke => {
 
 const pokemon_container_descendentes =document.getElementById("pokemon-container-descendentes");
 
-let gen =infoGeneral.reverse();
+let general_reverse =infoGeneral.reverse();
 
-gen.forEach (poke => {
+general_reverse.forEach (poke => {
     const card_pokemon =document.createElement("figure");
     card_pokemon.className ="cards";
     pokemon_container_descendentes.appendChild(card_pokemon);
@@ -116,6 +116,7 @@ function order_pokemon (){
         document.querySelector(".contentPokedex").style.display="block";
         document.querySelector(".pokemon-container").style.display="grid";
         document.querySelector(".pokemon-container-descendentes").style.display="none";
+        document.querySelector(".allTypes").style.display="none";
     }
     let order_descendentes = document.getElementById("descendentes");
     order_descendentes.onclick =function (){
@@ -126,24 +127,156 @@ function order_pokemon (){
         document.querySelector(".contentPokedex").style.display="block";
         document.querySelector(".pokemon-container").style.display="none";
         document.querySelector(".pokemon-container-descendentes").style.display="grid";
+        document.querySelector(".allTypes").style.display="none";
     }
 
 }
 
+// funciones de filtro ----------------------------------------------------------
+
+// funcion Pokemon tipo Acero
+const pokemon_container_typeSteel =document.getElementById("pokemon-container-typeSteel");
+
+const pokemon_steel =infoGeneral.filter(general_steel);
+const steel_poke = pokemon_steel;
+
+steel_poke.forEach (poke => {
+    const card_pokemon =document.createElement("figure");
+    card_pokemon.className ="cardsSteel";
+    pokemon_container_typeSteel.appendChild(card_pokemon);
+    const name_pokemon = document.createElement("h4");
+    name_pokemon.textContent = poke.name;
+    name_pokemon.className ="namePokeSteel";
+    card_pokemon.appendChild(name_pokemon);
+    const image_pokemon= document.createElement("img");
+    image_pokemon.src=poke.img;
+    image_pokemon.className ="imgPoke";
+    card_pokemon.appendChild(image_pokemon);
+    const num_pokemon = document.createElement("p");
+    num_pokemon.textContent = poke.num;
+    num_pokemon.className = "numPokeSteel";
+    card_pokemon.appendChild(num_pokemon);
+    const information_pokemon =document.createElement("figcaption");
+    information_pokemon.className ="informationSteel";
+    card_pokemon.appendChild(information_pokemon);
+    const type1_pokemon =document.createElement("p");
+    type1_pokemon.textContent = "Tipo : "+ poke.type[0];
+    type1_pokemon.className = "typesPoke";
+    information_pokemon.appendChild(type1_pokemon);
+    const type2_pokemon =document.createElement("p");
+    type2_pokemon.textContent =poke.type[1];
+    type2_pokemon.className = "typesPoke2";
+    information_pokemon.appendChild(type2_pokemon);
+    const atributes_pokemon_height =document.createElement("p");
+    atributes_pokemon_height.textContent = "Altura : "+ poke.size.height;
+    atributes_pokemon_height.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_height);
+    const atributes_pokemon_weight =document.createElement("p");
+    atributes_pokemon_weight.textContent ="Peso : "+ poke.size.weight;
+    atributes_pokemon_weight.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_weight);
+})
+
+// funcion Pokemon tipo Acero
+const pokemon_container_typeWater =document.getElementById("pokemon-container-typeWater");
+
+const pokemon_water =infoGeneral.filter(general_water);
+const water_poke = pokemon_water
+
+
+water_poke.forEach (poke => {
+    const card_pokemon =document.createElement("figure");
+    card_pokemon.className ="cardsWater";
+    pokemon_container_typeWater.appendChild(card_pokemon);
+    const name_pokemon = document.createElement("h4");
+    name_pokemon.textContent = poke.name;
+    name_pokemon.className ="namePokeWater";
+    card_pokemon.appendChild(name_pokemon);
+    const image_pokemon= document.createElement("img");
+    image_pokemon.src=poke.img;
+    image_pokemon.className ="imgPoke";
+    card_pokemon.appendChild(image_pokemon);
+    const num_pokemon = document.createElement("p");
+    num_pokemon.textContent = poke.num;
+    num_pokemon.className = "numPokeWater";
+    card_pokemon.appendChild(num_pokemon);
+    const information_pokemon =document.createElement("figcaption");
+    information_pokemon.className ="informationWater";
+    card_pokemon.appendChild(information_pokemon);
+    const type1_pokemon =document.createElement("p");
+    type1_pokemon.textContent = "Tipo : "+ poke.type[0];
+    type1_pokemon.className = "typesPoke";
+    information_pokemon.appendChild(type1_pokemon);
+    const type2_pokemon =document.createElement("p");
+    type2_pokemon.textContent =poke.type[1];
+    type2_pokemon.className = "typesPoke2";
+    information_pokemon.appendChild(type2_pokemon);
+    const atributes_pokemon_height =document.createElement("p");
+    atributes_pokemon_height.textContent = "Altura : "+ poke.size.height;
+    atributes_pokemon_height.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_height);
+    const atributes_pokemon_weight =document.createElement("p");
+    atributes_pokemon_weight.textContent ="Peso : "+ poke.size.weight;
+    atributes_pokemon_weight.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_weight);
+})
 
 
 
 
-// funciones de filtro
 
-const pokemon_fire =infoGeneral.filter(general_fire).toLowerCase;
-//console.log(pokemon_fire)
+
+// funcion Pokemon tipo Fire
+
+const pokemon_container_typeFire =document.getElementById("pokemon-container-typeFire");
+
+const pokemon_fire =infoGeneral.filter(general_fire);
+const fire_poke = pokemon_fire;
+
+fire_poke.forEach (poke => {
+    const card_pokemon =document.createElement("figure");
+    card_pokemon.className ="cardsFire";
+    pokemon_container_typeFire.appendChild(card_pokemon);
+    const name_pokemon = document.createElement("h4");
+    name_pokemon.textContent = poke.name;
+    name_pokemon.className ="namePokeFire";
+    card_pokemon.appendChild(name_pokemon);
+    const image_pokemon= document.createElement("img");
+    image_pokemon.src=poke.img;
+    image_pokemon.className ="imgPoke";
+    card_pokemon.appendChild(image_pokemon);
+    const num_pokemon = document.createElement("p");
+    num_pokemon.textContent = poke.num;
+    num_pokemon.className = "numPokeFire";
+    card_pokemon.appendChild(num_pokemon);
+    const information_pokemon =document.createElement("figcaption");
+    information_pokemon.className ="informationFire";
+    card_pokemon.appendChild(information_pokemon);
+    const type1_pokemon =document.createElement("p");
+    type1_pokemon.textContent = "Tipo : "+ poke.type[0];
+    type1_pokemon.className = "typesPoke";
+    information_pokemon.appendChild(type1_pokemon);
+    const type2_pokemon =document.createElement("p");
+    type2_pokemon.textContent =poke.type[1];
+    type2_pokemon.className = "typesPoke2";
+    information_pokemon.appendChild(type2_pokemon);
+    const atributes_pokemon_height =document.createElement("p");
+    atributes_pokemon_height.textContent = "Altura : "+ poke.size.height;
+    atributes_pokemon_height.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_height);
+    const atributes_pokemon_weight =document.createElement("p");
+    atributes_pokemon_weight.textContent ="Peso : "+ poke.size.weight;
+    atributes_pokemon_weight.className = "atributes";
+    information_pokemon.appendChild(atributes_pokemon_weight);
+})
+
+
+
+
+
 
 const pokemon_grass =infoGeneral.filter(general_grass);
 //console.log(pokemon_grass)
-
-const pokemon_water =infoGeneral.filter(general_water);
-//console.log(pokemon_water)
 
 const pokemon_bug =infoGeneral.filter(general_bug);
 //console.log(pokemon_bug)
@@ -184,11 +317,46 @@ const pokemon_fairy =infoGeneral.filter(general_fairy);
 const pokemon_dark =infoGeneral.filter(general_dark);
 //console.log(pokemon_dark)
 
-const pokemon_steel =infoGeneral.filter(general_steel);
-//console.log(pokemon_steel)
-
 const pokemon_ice =infoGeneral.filter(general_ice);
 //console.log(pokemon_ice)
+
+
+
+filter_types_pokemon ();
+
+function filter_types_pokemon () {
+
+    let filter_general = document.getElementById("todos");
+    filter_general.onclick =function (){
+        document.querySelector(".interfazInicial").style.display="none";
+        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".contentHome").style.display="none"; 
+        document.querySelector(".footer1").style.display="none"; 
+        document.querySelector(".contentPokedex").style.display="block";
+        document.querySelector(".pokemon-container").style.display="none";
+        document.querySelector(".pokemon-container-descendentes").style.display="none";
+        document.querySelector(".allTypes").style.display="grid";
+        document.querySelector(".pokemon-container-typeSteel").style.display="grid";
+        document.querySelector(".pokemon-container-typeWater").style.display="grid";
+      
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 pages ();
 
