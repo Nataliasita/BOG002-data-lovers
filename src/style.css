@@ -75,7 +75,7 @@ header{
           background: url("images/061.png") top right no-repeat, url("images/quagsire.png") top left no-repeat;
           background-size: 17% 81%;
           background-color:rgba(8, 107, 255, 0.521);
-          margin-left: -20px;
+         
 
     }
     }
@@ -138,7 +138,6 @@ header{
 #btnMenu{
     display:none;
 }
-
 header label{
     display: none;
     width:10vw ;
@@ -175,12 +174,10 @@ header label:hover{
     color: white;
     font-weight: bold;
 }
-
     @media (max-width:540px){
     header label{
       display: block;
       height: 7vh;
-      
     }
 .container{
       position: absolute;
@@ -341,36 +338,159 @@ header label:hover{
     }
 .contentPokedex{
     display: flex;
+    position: absolute;
     width: 100vw;
+    height: 2560vh;
     padding: 0;
-    color: white;
     font-weight: bold;
+    margin: 0;
+    background: url("images/fondo2.png");
+    background-repeat: space space;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     }
+.pokedex{
+    display: inline-block;
+    margin-left: 6vw;
+    color:white;
+    -webkit-text-stroke: 2px rgb(190, 0, 0);
+    font-size: 2.5em;
+}
 .pokemon-container{
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 22vw 22vw 22vw 22vw 22vw ;
+    height: 8vh;
+    width: 84vw;
+    column-gap: 1.4vw;
+    row-gap: 2vh;
+    grid-template-columns: repeat(5,14vw);
+    grid-template-rows: repeat(51, 47.4vh);
     color: black;
-}  
-.cards{
-    background: yellow;
-    text-align: center;
+    margin:2vh 0 0 4vw;
+    padding: 0; 
+    margin-left: 20vw; 
 }
+.cards{
+    background: #ff80809a;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}   
 .namePoke{
-    color: rgb(0, 8, 126);
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin:0 0 1vh 0;
+    background: #CB2438;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px; 
 }
 .imgPoke{
     width: 11vw;
     height: 21vh;
 }
 .numPoke{
-    color: black;
+    margin:0;
+    width:5vw ;
+    margin-left: 4.5vw;
+    color: rgb(255, 255, 255);
+    background: #CB2438;
+    padding: 0.7vh 0.7vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
 }
+.information{
+    display: flex;
+    width: 11vw;
+    height:12.1vh;
+    font-size: 14px;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    margin-left: 1.5vw;
+    align-items: stretch;
+    background: #ffd4d4c2; 
+    border-radius: 5px;
+    color: #520101;
+}
+.typesPoke{
+    text-transform: capitalize;
+    margin: 0;
+}
+.typesPoke2{
+    text-transform: capitalize;
+    margin: 0 0 0 3.1vw;
+}
+.atributes{
+    margin: 0;
+}
+.contenedor_filtro{
+    display: flex;
+    width: 13vw;
+    height: 73vh;
+    background: #CB2438;
+    margin-left: 3vw;
+    padding: 0;
+    border-radius: 10px;
+    margin-top: 20vh;
+}
+.contenedor_filtro h4{
+    position: relative;
+    text-align: left;
+    width: 15vw;
+    height: 1vh;
+    padding: 0;
+    color: white;
+    margin-left: 1vw;
+    top: 1vh;
+ 
+}
+.contenedor_filtro form{
+    position: relative;
+    background: #EBEBEB;
+    padding: 0;
+    height: 62vh;
+    width: 13vw;
+    border-radius: 5px;
+}
+.contenedor_filtro a{
+    text-decoration: none;
+    color: #CB2438;
+    padding: 0;
+}
+.contenedor_ordenar{
+    display: flex;
+    width: 14vw;
+    height: 13vh;
+    background: #CB2438;
+    margin-left: 3vw;
+    padding: 0;
+    border-radius: 10px;
+    bottom: 20px;
+}
+.contenedor_ordenar h4{
+    position: relative;
+    text-align: left;
+    top: 1vh;
+    margin-left: 1vw;
+    width: 15vw;
+    height: 5vh;
+    padding: 0;
+    color: white;
+}
+.contenedor_ordenar form{
+    position: relative;
+    background: #EBEBEB;
+    padding: 0;
+    height: 12vh;
+    width: 14vw;
+    border-radius: 5px;
 
-.footer2{
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
-    top:190vh;
-    }
+}
+.contenedor_ordenar a{
+    text-decoration: none;
+    color: #CB2438;
+    padding: 0;
+}

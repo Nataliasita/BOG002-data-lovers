@@ -58,59 +58,51 @@
           
           <section class="contentPokedex" id="contentPokedex" style= "display:none;">
 
-            <h1>Pokedex</h1>
-            
-            <form name="ordenar" id="orden">
-              <fieldset>
-                <legend>Ordenar Por:</legend>
-                 <select name="" id="">
-                    <option value="1" selected>Todos</option>
-                    <option value="2">A-Z</option>
-                     <option value="3">Z-A</option>
-                 </select>
-              </fieldset>
-            </form>
-            
-            
-
-            <form name="filtrar" id="filtroTipo">
-              
-                <legend>Filtrar Por:</legend>
-             
-                 <select name="typesSelecc" id="types">
-                     <option value="0" selected>Todos</option>
-                     <option value="1">Acero</option>
-                     <option value="2">Agua</option>
-                     <option value="3">Bicho</option>
-                     <option value="4">Dragon</option>
-                     <option value="5">Electrico</option>
-                     <option value="6">Fantasma</option>
-                     <option value="7">Fuego</option>
-                     <option value="8">Hada</option>
-                     <option value="9">Hielo</option>
-                     <option value="10">Lucha</option>
-                     <option value="11">Normal</option>
-                     <option value="12">Planta</option>
-                     <option value="13">Psiquico</option>
-                     <option value="14">Roca</option>
-                     <option value="15">Siniestro</option>
-                     <option value="16">Tierra</option>
-                     <option value="17">Veneno</option>
-                     <option value="18">Volador</option>
-                     <option value="19">No definido</option>
-                 </select>
-
-            <Input type=button value="Filtrar" onclick="seleccTypes()" ></Input>
-
-            </form>
-            
-            
-           
-          
-          <div id="pokemon-container" class="pokemon-container"> 
+                 <h1 class="pokedex">Pokedex---------------</h1>
 
          
-          </div>
+          
+                     <div id="pokemon-container" class="pokemon-container"> 
+
+                     </div>
+
+              <div class="contenedor_ordenar" style="display: block;">
+             
+                <h4>Ordenar por Numero:</h4>
+
+                    <form class="ordenar"> 
+                      <a href="#"><input type="checkbox">Desde #1 hasta #251</a><br>
+                      <a href="#"><input type="checkbox">Desde #251 hasta #1</a>
+                    </form>
+             </div>
+        
+            <div class="contenedor_filtro" style="display: block;">
+
+                 <h4>Filtrar por Tipo:</h4><br>
+
+                   <form class="Filtrar">
+                        <a href="#"><input type="checkbox">Todos</a><br>
+                        <a href="#"><input type="checkbox">Acero</a><br>
+                        <a href="#"><input type="checkbox">Agua</a><br>
+                        <a href="#"><input type="checkbox">Bicho</a><br>
+                        <a href="#"><input type="checkbox">Dragon</a><br>
+                        <a href="#"><input type="checkbox">Electrico</a><br>
+                        <a href="#"><input type="checkbox">Fantasma</a><br>
+                        <a href="#"><input type="checkbox">Fuego</a><br>
+                        <a href="#"><input type="checkbox">Hada</a><br>
+                        <a href="#"><input type="checkbox">Hielo</a><br>
+                        <a href="#"><input type="checkbox">Lucha</a><br>
+                        <a href="#"><input type="checkbox">Normal</a><br>
+                        <a href="#"><input type="checkbox">Planta</a><br>
+                        <a href="#"><input type="checkbox">Psiquico</a><br>
+                        <a href="#"><input type="checkbox">Roca</a><br>
+                        <a href="#"><input type="checkbox">Siniestro</a><br>
+                        <a href="#"><input type="checkbox">Tierra</a><br>
+                        <a href="#"><input type="checkbox">Veneno</a><br>
+                        <a href="#"><input type="checkbox">Volador</a><br>
+                    </form>
+             </div>  
+           
 
         
 
