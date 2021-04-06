@@ -70,20 +70,79 @@
 
                   <!-- contenedores pokemon por tipo-->
 
-                  <div class="allTypes" style= "display:none;" >
-
+                  <div class="allTypes" id="allTypes" style= "display:none;" >
+                        
                           <div id="pokemon-container-typeSteel" class="pokemon-container-typeSteel" style= "display:none;">  
+                          <h3 id="clasificacion">_________Tipo Acero_________</h3>
+                          </div> 
+                        
+                          <div id="pokemon-container-typeWater" class="pokemon-container-typeWater" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Agua_________</h3>
                           </div> 
 
-                          
-                          <div id="pokemon-container-typeWater" class="pokemon-container-typeWater">  
+                          <div id="pokemon-container-typeBug" class="pokemon-container-typeBug" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Bicho_________</h3>
                           </div> 
 
-
-                          <div id="pokemon-container-typeFire" class="pokemon-container-typeFire" style= "display:none;">  
+                          <div id="pokemon-container-typeDragon" class="pokemon-container-typeDragon" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Dragon_________</h3>
                           </div> 
 
+                          <div id="pokemon-container-typeElectric" class="pokemon-container-typeElectric" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Electrico_________</h3>
+                          </div> 
 
+                          <div id="pokemon-container-typeGhost" class="pokemon-container-typeGhost" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Fantasma_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeFire" class="pokemon-container-typeFire" style= "display:none;">
+                            <h3 id="clasificacion">_________Tipo Fuego_________</h3> 
+                          </div> 
+
+                          <div id="pokemon-container-typeFairy" class="pokemon-container-typeFairy" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Hada_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeIce" class="pokemon-container-typeIce" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Hielo_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeFighting" class="pokemon-container-typeFighting" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Lucha_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeNormal" class="pokemon-container-typeNormal" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Normal_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeGrass" class="pokemon-container-typeGrass" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Planta_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typePsychic" class="pokemon-container-typePsychic" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Psiquico_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeRock" class="pokemon-container-typeRock" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Roca_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeDark" class="pokemon-container-typeDark" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Siniestro_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeGround" class="pokemon-container-typeGround" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Tierra_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typePoison" class="pokemon-container-typePoison" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Veneno_________</h3>
+                          </div> 
+
+                          <div id="pokemon-container-typeFlying" class="pokemon-container-typeFlying" style= "display:none;">  
+                            <h3 id="clasificacion">_________Tipo Volador_________</h3>
+                          </div> 
 
                   </div>
 
@@ -109,25 +168,25 @@
                        <form class="Filtrar">
                           <ul>
                            <br>
-                           <li id="todos"><a href="#"><input type="checkbox">Todos</a></li>
+                           <li id="todos"><a href="#allTypes"><input type="checkbox">Todos</a></li>
                            <li id="acero"><a href="#pokemon-container-typeSteel"><input type="checkbox">Acero</a></li>
                            <li id="agua"><a href="#pokemon-container-typeWater"><input type="checkbox">Agua</a></li>
-                           <li><a href="#"><input type="checkbox">Bicho</a></li>
-                           <li><a href="#"><input type="checkbox">Dragon</a></li>
-                           <li><a href="#"><input type="checkbox">Electrico</a></li>
-                           <li><a href="#"><input type="checkbox">Fantasma</a></li>
-                           <li><a href="#"><input type="checkbox">Fuego</a></li>
-                           <li><a href="#"><input type="checkbox">Hada</a></li>
-                           <li><a href="#"><input type="checkbox">Hielo</a></li>
-                           <li><a href="#"><input type="checkbox">Lucha</a></li>
-                           <li><a href="#"><input type="checkbox">Normal</a></li>
-                           <li><a href="#"><input type="checkbox">Planta</a></li>
-                           <li><a href="#"><input type="checkbox">Psiquico</a></li>
-                           <li><a href="#"><input type="checkbox">Roca</a></li>
-                           <li><a href="#"><input type="checkbox">Siniestro</a></li>
-                           <li><a href="#"><input type="checkbox">Tierra</a></li>
-                           <li><a href="#"><input type="checkbox">Veneno</a></li>
-                           <li><a href="#"><input type="checkbox">Volador</a></li>
+                           <li id="bicho"><a href="#pokemon-container-typeBug"><input type="checkbox">Bicho</a></li>
+                           <li id="dragon"><a href="#pokemon-container-typeDragon"><input type="checkbox">Dragon</a></li>
+                           <li id="electrico"><a href="#pokemon-container-typeElectric"><input type="checkbox">Electrico</a></li>
+                           <li id="fantasma"><a href="#pokemon-container-typeGhost"><input type="checkbox">Fantasma</a></li>
+                           <li id="fuego"><a href="#pokemon-container-typeFire"><input type="checkbox">Fuego</a></li>
+                           <li id="hada"><a href="#pokemon-container-typeFairy"><input type="checkbox">Hada</a></li>
+                           <li id="hielo"><a href="#pokemon-container-typeIce"><input type="checkbox">Hielo</a></li>
+                           <li id="lucha"><a href="#pokemon-container-typeFighting"><input type="checkbox">Lucha</a></li>
+                           <li id="normal"><a href="#pokemon-container-typeNormal"><input type="checkbox">Normal</a></li>
+                           <li id="planta"><a href="#pokemon-container-typeGrass"><input type="checkbox">Planta</a></li>
+                           <li id="psiquico"><a href="#pokemon-container-typePsychic"><input type="checkbox">Psiquico</a></li>
+                           <li id="roca"><a href="#pokemon-container-typeRock"><input type="checkbox">Roca</a></li>
+                           <li id="siniestro"><a href="#pokemon-container-typeDark"><input type="checkbox">Siniestro</a></li>
+                           <li id="tierra"><a href="#pokemon-container-typeGround"><input type="checkbox">Tierra</a></li>
+                           <li id="veneno"><a href="#pokemon-container-typePoison"><input type="checkbox">Veneno</a></li>
+                           <li id="volador"><a href="#pokemon-container-typeFlying"><input type="checkbox">Volador</a></li>
                           <br>
                           </ul>  
                         </form>
