@@ -1488,6 +1488,79 @@ function filter_types_pokemon () {
     }
 }
 
+//Funcion Interfaz Batalla
+
+const pokemon_batalla =document.getElementById("pokemon-batalla");
+
+let general_reverse1 =infoGeneral.reverse();
+
+general_reverse1.forEach (poke => {
+    const card_pokemon_batalla =document.createElement("figure");
+    card_pokemon_batalla.className ="cardsBatalla";
+    pokemon_batalla.appendChild(card_pokemon_batalla);
+    const num_pokemon_batalla = document.createElement("p");
+    num_pokemon_batalla.textContent = poke.num;
+    num_pokemon_batalla.className = "numPokeBatalla";
+    card_pokemon_batalla.appendChild(num_pokemon_batalla);
+    const image_pokemon_batalla= document.createElement("img");
+    image_pokemon_batalla.src=poke.img;
+    image_pokemon_batalla.className ="imgPokeBatalla";
+    card_pokemon_batalla.appendChild(image_pokemon_batalla);
+    const name_pokemon_batalla = document.createElement("h4");
+    name_pokemon_batalla.textContent = poke.name;
+    name_pokemon_batalla.className ="namePokeBatalla";
+    card_pokemon_batalla.appendChild(name_pokemon_batalla);
+    const information_pokemon_batalla =document.createElement("figcaption");
+    information_pokemon_batalla.className ="informationBatalla";
+    card_pokemon_batalla.appendChild(information_pokemon_batalla);
+    const type1_pokemon_batalla =document.createElement("p");
+    type1_pokemon_batalla.textContent = "Tipo : "+ poke.type[0];
+    type1_pokemon_batalla.className = "typesPokeBatalla";
+    information_pokemon_batalla.appendChild(type1_pokemon_batalla);
+    const type2_pokemon_batalla =document.createElement("p");
+    type2_pokemon_batalla.textContent =poke.type[1];
+    type2_pokemon_batalla.className = "typesPoke2Batalla";
+    information_pokemon_batalla.appendChild(type2_pokemon_batalla);
+    const resistant1 = document.createElement("p");
+    resistant1.textContent="Resistente: "+ poke.resistant[0];
+    resistant1.className = "resistant";
+    information_pokemon_batalla.appendChild(resistant1);
+    const resistant2 = document.createElement("p");
+    resistant2.textContent=poke.resistant[1];
+    resistant2.className = "resistant2";
+    information_pokemon_batalla.appendChild(resistant2);
+    const resistant3 = document.createElement("p");
+    resistant3.textContent=poke.resistant[2];
+    resistant3.className = "resistant2";
+    information_pokemon_batalla.appendChild(resistant3);
+    const resistant4 = document.createElement("p");
+    resistant4.textContent=poke.resistant[3];
+    resistant4.className = "resistant2";
+    information_pokemon_batalla.appendChild(resistant4);
+    const resistant5 = document.createElement("p");
+    resistant5.textContent=poke.resistant[4];
+    resistant5.className = "resistant2";
+    information_pokemon_batalla.appendChild(resistant5);
+    const weaknesses1 = document.createElement("p");
+    weaknesses1.textContent="Debil: "+poke.weaknesses[0];
+    weaknesses1.className = "weaknesses";
+    information_pokemon_batalla.appendChild(weaknesses1);
+    const weaknesses2 = document.createElement("p");
+    weaknesses2.textContent=poke.weaknesses[1];
+    weaknesses2.className = "weaknesses2";
+    information_pokemon_batalla.appendChild(weaknesses2);
+    const weaknesses3 = document.createElement("p");
+    weaknesses3.textContent=poke.weaknesses[2];
+    weaknesses3.className = "weaknesses2";
+    information_pokemon_batalla.appendChild(weaknesses3);
+    const weaknesses4 = document.createElement("p");
+    weaknesses4.textContent=poke.weaknesses[3];
+    weaknesses4.className = "weaknesses2";
+    information_pokemon_batalla.appendChild(weaknesses4);
+})
+
+
+
 //Funcion cambio de paginas internas FanPage
 
 pages ();
@@ -1519,6 +1592,35 @@ function pages () {
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
         document.querySelector(".footer2").style.display="block"; 
+        document.querySelector(".contentBatalla").style.display="none";
+        document.querySelector(".footer3").style.display="none"; 
+        document.querySelector(".contentEvolucion").style.display="none";
+        document.querySelector(".footer4").style.display="none"; 
     }
-
+    let mainBatalla = document.getElementById("batalla");
+    mainBatalla.onclick = function(){
+        document.querySelector(".interfazInicial").style.display="none";
+        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".contentHome").style.display="none"; 
+        document.querySelector(".footer1").style.display="none"; 
+        document.querySelector(".contentPokedex").style.display="none";
+        document.querySelector(".footer2").style.display="none"; 
+        document.querySelector(".contentBatalla").style.display="block";
+        document.querySelector(".footer3").style.display="block"; 
+        document.querySelector(".contentEvolucion").style.display="none";
+        document.querySelector(".footer4").style.display="none"; 
+    }
+    let mainEvolucion = document.getElementById("evolucion");
+    mainEvolucion.onclick = function(){
+        document.querySelector(".interfazInicial").style.display="none";
+        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".contentHome").style.display="none"; 
+        document.querySelector(".footer1").style.display="none"; 
+        document.querySelector(".contentPokedex").style.display="none";
+        document.querySelector(".footer2").style.display="none"; 
+        document.querySelector(".contentBatalla").style.display="none";
+        document.querySelector(".footer3").style.display="none"; 
+        document.querySelector(".contentEvolucion").style.display="block";
+        document.querySelector(".footer4").style.display="block"; 
+    }
 }

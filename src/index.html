@@ -29,8 +29,8 @@
               <ul>
                 <li id="home"><a href="#contentHome">Inicio</a></li>
                 <li id="pokedex"><a href="#contentPokedex">Pokedex</a></li>
-                <li><a href="option">Batalla</a></li>
-                <li><a href="option">Evolucion</a></li>
+                <li id ="batalla"><a href="#contentBatalla">Batalla</a></li>
+                <li id ="evolucion"><a href="#contentEvolucion">Evolucion</a></li>
                 <li><a href="option">Top 10</a></li>
               </ul>
             </nav>
@@ -146,9 +146,6 @@
 
                   </div>
 
-
-
-
               <div class="contenedor_ordenar" style="display: block;">
              
                 <h4>Ordenar por Numero:</h4>
@@ -193,16 +190,43 @@
 
                   </div>  
              
-             
-
-        
+                  
 
                  <footer class="footer2" style= "display:none;">
            
                  </footer>
 
-          </section>
-        
+            </section>
+
+
+
+            <section class="contentBatalla" id="contentBatalla" style= "display:none;">
+           
+                    <h2 class="equipo">--------Tu Equipo-------</h2>
+                    <h6 class="equipo2">Buscar por numero: <input type="search" placeholder="#"></h6>
+
+                      <div id="pokemon-batalla" class="pokemon-batalla">
+
+                      </div>
+
+                    <footer class="footer3" style= "display:none;">
+           
+                    </footer>
+
+            </section>
+
+           <section class="contentEvolucion" id="contentEvolucion" style= "display:none;"></section>
+
+
+               <div id="pokemon-evolucion" class="pokemon-evolucion" style= "display:none;">
+
+               </div>
+
+               <footer class="footer4" style= "display:none;">
+           
+               </footer>
+
+           </section>
 
           <div id="root"></div>
     <script src="main.js" type="module"></script>

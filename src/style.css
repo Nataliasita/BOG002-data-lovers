@@ -448,7 +448,6 @@ header label:hover{
     padding: 0;
     border-radius: 10px;
     bottom: 20px;
-    
 }
 .contenedor_ordenar h4{
     position: relative;
@@ -486,7 +485,6 @@ header label:hover{
     padding: 0;
     border-radius: 10px;
     margin-top: 20vh;
-    
 }
 .contenedor_filtro h4{
     position: relative;
@@ -540,7 +538,6 @@ header label:hover{
     margin-left: 10vw;
     justify-content: stretch; 
     align-items: stretch;
-  
 }
 .pokemon-container-typeSteel{
     display: grid;
@@ -549,7 +546,7 @@ header label:hover{
     column-gap: 1.4vw;
     row-gap: 2vh;
     grid-template-columns: repeat(5,14vw);
-    grid-template-rows: repeat(51, 47.4vh);
+    grid-template-rows: repeat(1, 47.4vh);
     color: black;
     margin:2vh 0 0 4vw;
     padding: 0; 
@@ -673,6 +670,7 @@ header label:hover{
     padding: 0; 
     margin-left: 12vw; 
     margin-top: 448vh;
+    flex-wrap: wrap;
     justify-content: stretch; 
     align-items: stretch;
 }
@@ -1597,6 +1595,171 @@ header label:hover{
     height: 10vh;
     margin-top: 3200vh;
     background: #df141498 ;
+    top:190vh;
+    z-index: 9;
+}
+.contentBatalla{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 7710vh;
+    padding: 0;
+    font-weight: bold;
+    margin: 0;
+    background: url("images/batalla1.png");
+    background-repeat: space space;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.equipo{
+    display: inline-block;
+    margin-left: 36vw;
+    color:white;
+    -webkit-text-stroke: 2px rgb(190, 108, 0);
+    font-size: 2.1em;
+    padding: 0;
+}
+.equipo2{
+    display: inline-block;
+    margin-left: 34vw;
+    color:rgb(190, 108, 0);
+    font-size: 1.3em;
+    padding: 0;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.footer3{
+    position: absolute;
+    align-items: flex-end;
+    width: 100vw;
+    height: 10vh;
+    margin-top: 7520vh;
+    background: #dfb01498 ;
+    top:190vh;
+    z-index: 9;
+}
+.pokemon-batalla{
+    display: grid;
+    height: 8vh;
+    width: 70vw;
+    column-gap: 1.4vw;
+    row-gap: 2vh;
+    grid-template-columns: repeat(2,34vw);
+    grid-template-rows: repeat(150, 59vh);
+    color: black;
+    margin:2vh 0 0 4vw;
+    padding: 0; 
+    margin-left: 15vw; 
+}
+.cardsBatalla{
+    background: #ffe880c5;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}   
+.namePokeBatalla{
+    margin:0;
+    width:25vw ;
+    text-align: center;
+    color: rgb(109, 71, 0);
+    padding: 0.4vh 0.7vw;
+    text-transform: capitalize;
+    font-size: 1.35em;
+    margin-left: 4.5vw;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.imgPokeBatalla{
+    width: 11vw;
+    height: 21vh;
+}
+.numPokeBatalla{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin:0 0 1vh 0;
+    background: #ffa93a;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px; 
+    font-size: 1.3em;
+}
+.informationBatalla{
+    display: flex;
+    width: 28vw;
+    height:22vh;
+    font-size: 14px;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2vw;
+    margin-left: 3vw;
+    align-items: stretch;
+    background: #fff1d4c2; 
+    border-radius: 7px;
+    color: #520101;
+    flex-wrap: wrap;
+}
+.typesPokeBatalla{
+    text-transform: capitalize;
+    margin:  0 0 0 7vw;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background: #ffa93a;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 10px; 
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+.typesPoke2Batalla{
+    text-transform: capitalize;
+    margin: 0 0 1vh 9vw;
+    padding-left: 3vw;
+    padding-bottom: 1vh;
+    background: #ffa93a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px; 
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+.resistant{
+    margin: 0;
+    text-transform: capitalize;
+}
+.resistant2{
+    text-transform: capitalize;
+    margin: 0 0 0 5.8vw;
+}
+.weaknesses{
+    margin:9vh 4vw 0 0; 
+    text-transform: capitalize;
+}
+.weaknesses2{
+    text-transform: capitalize;
+    margin: 0 0 0 3.1vw;
+}
+.contentEvolucion{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 7710vh;
+    padding: 0;
+    font-weight: bold;
+    margin: 0;
+    background: url("images/Evolucion.png");
+    background-repeat: space space;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.footer4{
+    position: absolute;
+    align-items: flex-end;
+    width: 100vw;
+    height: 10vh;
+    margin-top: 7520vh;
+    background: #0d02ad98 ;
     top:190vh;
     z-index: 9;
 }
