@@ -17,7 +17,7 @@ import { general_dark } from './data.js';
 import { general_steel } from './data.js';
 import { general_ice } from './data.js';
 
-import pokemon from './data/pokemon/pokemon.js';
+//import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 
 const infoGeneral = data.pokemon;
@@ -1559,6 +1559,59 @@ general_reverse1.forEach (poke => {
     information_pokemon_batalla.appendChild(weaknesses4);
 })
 
+//Funcion Interfaz Evolucion
+
+const pokemon_evolucion =document.getElementById("pokemon-evolucion");
+
+
+infoGeneral.forEach (poke => {
+    const card_pokemon_evolucion =document.createElement("figure");
+    card_pokemon_evolucion.className ="cardsEvolucion";
+    pokemon_evolucion.appendChild(card_pokemon_evolucion);
+    const name_pokemon_evolucion = document.createElement("h4");
+    name_pokemon_evolucion.textContent = poke.name;
+    name_pokemon_evolucion.className ="namePokeEvolucion";
+    card_pokemon_evolucion.appendChild(name_pokemon_evolucion);
+    const image_pokemon_evolucion= document.createElement("img");
+    image_pokemon_evolucion.src=poke.img;
+    image_pokemon_evolucion.className ="imgPokeEvolucion";
+    card_pokemon_evolucion.appendChild(image_pokemon_evolucion);
+    const num_pokemon_evolucion = document.createElement("p");
+    num_pokemon_evolucion.textContent = poke.num;
+    num_pokemon_evolucion.className = "numPokeEvolucion";
+    card_pokemon_evolucion.appendChild(num_pokemon_evolucion);
+    const information_pokemon_evolucion =document.createElement("figcaption");
+    information_pokemon_evolucion.className ="informationEvolucion";
+    card_pokemon_evolucion.appendChild(information_pokemon_evolucion);
+    const type1_pokemon_evolucion =document.createElement("p");
+    type1_pokemon_evolucion.textContent = "Tipo : "+ poke.type[0];
+    type1_pokemon_evolucion.className = "typesPokeEvolucion";
+    information_pokemon_evolucion.appendChild(type1_pokemon_evolucion);
+    const atributes_evolucion_candy =document.createElement("p");
+    atributes_evolucion_candy.textContent = "Candy : "+ poke.evolution.candy;
+    atributes_evolucion_candy.className = "atributesCandy";
+    information_pokemon_evolucion.appendChild(atributes_evolucion_candy);
+
+    //const next_pokemon_evolucion = poke.evolution['next-evolution'];
+
+    console.log(infoGeneral[0]["evolution"]["next-evolution"][0]["candy-cost"])
+    console.log(infoGeneral[0]["evolution"]["next-evolution"][0]["next-evolution"][0]["candy-cost"])
+
+   // console.log(next_pokemon_evolucion)
+
+//    let evoluciones_compacto =[next_pokemon_evolucion].values();
+
+//      console.log([...evoluciones_compacto][0]["candy-cost"])
+
+//        console.log(next_pokemon_evolucion)
+
+ //     let desglose_evoluciones=([...evoluciones_compacto][0])
+
+})
+
+
+
+
 
 
 //Funcion cambio de paginas internas FanPage
@@ -1574,6 +1627,9 @@ function pages () {
         document.querySelector(".contentHome").style.display="block"; 
         document.querySelector(".footer1").style.display="block"; 
         document.querySelector(".contentPokedex").style.display="none";
+        document.querySelector(".contentEvolucion").style.display="none";
+        document.querySelector(".contentBatalla").style.display="none";
+
     }
 
     let mainHome = document.getElementById("home");
@@ -1623,4 +1679,5 @@ function pages () {
         document.querySelector(".contentEvolucion").style.display="block";
         document.querySelector(".footer4").style.display="block"; 
     }
+
 }
