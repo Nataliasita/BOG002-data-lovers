@@ -1270,6 +1270,29 @@ function function_of_filter (){
 }
 
 
+let texto=document.getElementById('texto');
+let buscar=document.getElementById('buscar');
+buscar.addEventListener("click", busqueda);
+
+
+function busqueda (){
+    const resultado = texto.value.toUpperCase();
+    const card_battle = document.getElementsByClassName("cardsBatalla");
+
+
+//    console.log(resultado)
+
+    for (let i = 0; i < infoGeneral.length; i++){
+        if (card_battle[i].textContent.toUpperCase().includes(resultado)){
+            card_battle[i].style.display = "block";
+        }else{
+            card_battle[i].style.display = "none";
+        }
+    }
+}
+
+
+
 //Funcion Interfaz Evolucion
 
 const pokemon_evolucion =document.getElementById("pokemon-evolucion");
