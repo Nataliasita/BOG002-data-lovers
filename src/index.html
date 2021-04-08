@@ -57,7 +57,8 @@
           </section>
           
           <section class="contentPokedex" id="contentPokedex" style= "display:none;">
-                        <a href="#contenedor_filtro" class="btn-flotante">Regresar</a>
+
+                        <a href="#contenedor_filtro" class="btn-flotante" style= "display:none;">Return Up<img class="pikachu" src="images/btnimage (1).png"></a>
 
                         <h1 class="pokedex">Pokedex ---------------</h1>
 
@@ -153,8 +154,8 @@
 
                     <form class="ordenar"> 
                       <ul>
-                      <li id="order"><a href="#pokemon-container"><input type="checkbox"> Desde n° 1 hasta n° 251</a></li><br>
-                      <li id="descendentes"><a href="#pokemon-container-descendentes"><input type="checkbox">Desde n° 251 hasta n° 1</a></li>
+                      <li id="order"><a href="#pokemon-container"><input type="checkbox"> De N° 1 a N° 251</a></li><br>
+                      <li id="descendentes"><a href="#pokemon-container-descendentes"><input type="checkbox">De N° 251 a N° 1</a></li>
                       </ul>
                     </form>
                </div>
@@ -166,7 +167,7 @@
                        <form class="Filtrar">
                           <ul>
                            <br>
-                           <li id="todos"><a href="#allTypes"><input type="checkbox">Todos</a></li>
+                           <li id="todos"><a href="#allTypes"><input type="checkbox" id="checkAll" onclick="function_of_filter()">Todos</a></li>
                            <li id="acero"><a href="#pokemon-container-typeSteel"><input type="checkbox">Acero</a></li>
                            <li id="agua"><a href="#pokemon-container-typeWater"><input type="checkbox">Agua</a></li>
                            <li id="bicho"><a href="#pokemon-container-typeBug"><input type="checkbox">Bicho</a></li>
@@ -204,7 +205,9 @@
             <section class="contentBatalla" id="contentBatalla" style= "display:none;">
            
                     <h2 class="equipo">-------- Tu Equipo -------</h2>
-                    <h6 class="equipo2">Buscar por numero: <input type="search" placeholder="#"></h6>
+                    <h6 class="equipo2">Buscar por numero: <input type="text" id="input" onkeyup="search_batalla()" placeholder="nombre"></h6>
+
+                    <a href="#contentBatalla" class="btn-flotante2" style= "display:none;">Return up<img class="pikachu" src="images/btnimage (1).png"></a>
 
                       <div id="pokemon-batalla" class="pokemon-batalla" >
 
@@ -219,6 +222,8 @@
            <section class="contentEvolucion" id="contentEvolucion" style= "display:none;">
 
               <h2 class="equipoEvo">-------- Poke - Evoluciones -------</h2>
+              <a href="#contentEvolucion" class="btn-flotante3" style= "display:none;"><img class="pikachu" src="images/btnimage (1).png">Return Up</a>
+
                <div id="pokemon-evolucion" class="pokemon-evolucion" >
 
                </div>

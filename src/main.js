@@ -117,6 +117,7 @@ function order_pokemon (){
         document.querySelector(".pokemon-container").style.display="grid";
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
     }
     let order_descendentes = document.getElementById("descendentes");
     order_descendentes.onclick =function (){
@@ -128,6 +129,7 @@ function order_pokemon (){
         document.querySelector(".pokemon-container").style.display="none";
         document.querySelector(".pokemon-container-descendentes").style.display="grid";
         document.querySelector(".allTypes").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
     }
 
 }
@@ -941,6 +943,7 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-typeGround").style.display="grid";
         document.querySelector(".pokemon-container-typePoison").style.display="grid";
         document.querySelector(".pokemon-container-typeFlying").style.display="grid";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
 
@@ -1252,6 +1255,21 @@ general_reverse1.forEach (poke => {
     information_pokemon_batalla.appendChild(weaknesses4);
 })
 
+function_of_filter ();
+
+function function_of_filter (){
+    var checkBoxAll = document.getElementById("checkAll");
+    var allTypesPokemon = document.getElementById("allTypes");
+
+    if (checkBoxAll.checked == true){
+        allTypesPokemon.style.display = "block";
+    } 
+    else{
+        allTypesPokemon.style.display = "none";
+    }
+}
+
+
 //Funcion Interfaz Evolucion
 
 const pokemon_evolucion =document.getElementById("pokemon-evolucion");
@@ -1265,6 +1283,10 @@ infoGeneral.forEach (poke => {
     name_pokemon_evolucion.textContent = poke.name;
     name_pokemon_evolucion.className ="namePokeEvolucion";
     card_pokemon_evolucion.appendChild(name_pokemon_evolucion);
+    const region_evolucion = document.createElement("p");
+    region_evolucion.textContent = poke.generation.name;
+    region_evolucion.className ="regionEvolucion";
+    card_pokemon_evolucion.appendChild(region_evolucion);
     const image_pokemon_evolucion= document.createElement("img");
     image_pokemon_evolucion.src=poke.img;
     image_pokemon_evolucion.className ="imgPokeEvolucion";
@@ -1281,9 +1303,10 @@ infoGeneral.forEach (poke => {
     type1_pokemon_evolucion.className = "typesPokeEvolucion";
     information_pokemon_evolucion.appendChild(type1_pokemon_evolucion);
     const atributes_evolucion_candy =document.createElement("p");
-    atributes_evolucion_candy.textContent = "Candy : "+ poke.evolution.candy;
+    atributes_evolucion_candy.textContent = "Caramelos : "+ poke.evolution.candy;
     atributes_evolucion_candy.className = "atributesCandy";
     information_pokemon_evolucion.appendChild(atributes_evolucion_candy);
+
 })
 
 //Funcion cambio de paginas internas FanPage
@@ -1310,6 +1333,10 @@ function pages () {
         document.querySelector(".contentHome").style.display="block"; 
         document.querySelector(".footer1").style.display="block"; 
         document.querySelector(".contentPokedex").style.display="none";
+        document.querySelector(".contentBatalla").style.display="none";
+        document.querySelector(".footer3").style.display="none"; 
+        document.querySelector(".contentEvolucion").style.display="none";
+        document.querySelector(".footer4").style.display="none"; 
     }
 
     let mainPokedex = document.getElementById("pokedex");
@@ -1336,6 +1363,7 @@ function pages () {
         document.querySelector(".contentBatalla").style.display="block";
         document.querySelector(".footer3").style.display="block"; 
         document.querySelector(".contentEvolucion").style.display="none";
+        document.querySelector(".btn-flotante2").style.display="block";
         document.querySelector(".footer4").style.display="none"; 
     }
     let mainEvolucion = document.getElementById("evolucion");
@@ -1349,6 +1377,7 @@ function pages () {
         document.querySelector(".contentBatalla").style.display="none";
         document.querySelector(".footer3").style.display="none"; 
         document.querySelector(".contentEvolucion").style.display="block";
+        document.querySelector(".btn-flotante3").style.display="block";
         document.querySelector(".footer4").style.display="block"; 
     }
 
