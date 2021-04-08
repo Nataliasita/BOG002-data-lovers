@@ -118,6 +118,7 @@ function order_pokemon (){
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="none";
         document.querySelector(".btn-flotante").style.display="block";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
     }
     let order_descendentes = document.getElementById("descendentes");
     order_descendentes.onclick =function (){
@@ -130,6 +131,7 @@ function order_pokemon (){
         document.querySelector(".pokemon-container-descendentes").style.display="grid";
         document.querySelector(".allTypes").style.display="none";
         document.querySelector(".btn-flotante").style.display="block";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
     }
 
 }
@@ -910,6 +912,19 @@ flying_poke.forEach (poke => {
     information_pokemon.appendChild(atributes_pokemon_weight);
 })
 
+function_of_filter ();
+
+function function_of_filter (){
+    var checkBoxAll = document.getElementById("checkAll");
+    var allTypesPokemon = document.getElementById("allTypes");
+
+    if (checkBoxAll.checked == true){
+        allTypesPokemon.style.display = "block";
+    } 
+    else{
+        allTypesPokemon.style.display = "none";
+    }
+}
 
 filter_types_pokemon ();
 
@@ -944,6 +959,7 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-typePoison").style.display="grid";
         document.querySelector(".pokemon-container-typeFlying").style.display="grid";
         document.querySelector(".btn-flotante").style.display="block";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
         document.querySelector(".footer2").style.display="block";
     }
 
@@ -1255,30 +1271,15 @@ general_reverse1.forEach (poke => {
     information_pokemon_batalla.appendChild(weaknesses4);
 })
 
-function_of_filter ();
-
-function function_of_filter (){
-    var checkBoxAll = document.getElementById("checkAll");
-    var allTypesPokemon = document.getElementById("allTypes");
-
-    if (checkBoxAll.checked == true){
-        allTypesPokemon.style.display = "block";
-    } 
-    else{
-        allTypesPokemon.style.display = "none";
-    }
-}
-
+//----------------------- buscador por nombre interfaz Batalla
 
 let texto=document.getElementById('texto');
 let buscar=document.getElementById('buscar');
 buscar.addEventListener("click", busqueda);
 
-
 function busqueda (){
     const resultado = texto.value.toUpperCase();
     const card_battle = document.getElementsByClassName("cardsBatalla");
-
 
 //    console.log(resultado)
 
@@ -1291,7 +1292,26 @@ function busqueda (){
     }
 }
 
+//----------------------- buscador por numero interfaz Batalla
 
+let number=document.getElementById('number');
+let buscar_num =document.getElementById('buscar_num');
+buscar_num.addEventListener("click", busqueda_num);
+
+function busqueda_num (){
+    const resultado1 = number.value.toUpperCase();
+    const card_battle = document.getElementsByClassName("cardsBatalla");
+
+//    console.log(resultado)
+
+    for (let i = 0; i < infoGeneral.length; i++){
+        if (card_battle[i].textContent.toUpperCase().includes(resultado1)){
+            card_battle[i].style.display = "block";
+        }else{
+            card_battle[i].style.display = "none";
+        }
+    }
+}
 
 //Funcion Interfaz Evolucion
 
@@ -1332,6 +1352,29 @@ infoGeneral.forEach (poke => {
 
 })
 
+// Funcion interfaz evolucion
+
+let regiones =document.getElementById('region');
+let buscar_region =document.getElementById('buscar_region');
+buscar_region.addEventListener("click", busqueda_region);
+
+function busqueda_region (){
+    const resultado1 = regiones.value.toUpperCase();
+    const card_evo = document.getElementsByClassName("cardsEvolucion");
+
+//    console.log(resultado)
+
+    for (let i = 0; i < infoGeneral.length; i++){
+        if (card_evo[i].textContent.toUpperCase().includes(resultado1)){
+            card_evo[i].style.display = "block";
+        }else{
+            card_evo[i].style.display = "none";
+        }
+    }
+}
+
+
+
 //Funcion cambio de paginas internas FanPage
 
 pages ();
@@ -1370,10 +1413,12 @@ function pages () {
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
         document.querySelector(".footer2").style.display="block"; 
+        document.querySelector(".interfaz_two_pokedex").style.display="block";
         document.querySelector(".contentBatalla").style.display="none";
         document.querySelector(".footer3").style.display="none"; 
         document.querySelector(".contentEvolucion").style.display="none";
-        document.querySelector(".footer4").style.display="none"; 
+        document.querySelector(".footer4").style.display="none";
+         
     }
     let mainBatalla = document.getElementById("batalla");
     mainBatalla.onclick = function(){

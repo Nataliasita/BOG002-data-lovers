@@ -393,6 +393,26 @@ header label:hover{
 		right: 20px;
 	}
 }
+.objeto_2 {
+	position:absolute;
+    top: 10vw;
+    right: 0.8vw;
+    left: 55vw;
+}
+.objeto_3 {
+	position:absolute;
+    top: 10vw;
+    right: 0.8vw;
+    left: 30vw;
+    width: 30vw;
+    color: rgba(255, 255, 255, 0.966) ;
+    background:rgba(190, 0, 0, 0.685)  ;
+    border-radius: 30px;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+}
 .pokemon-container{
     display: grid;
     height: 8vh;
@@ -1717,10 +1737,10 @@ header label:hover{
     display: grid;
     height: 8vh;
     width: 70vw;
-    column-gap: 1.4vw;
+    column-gap: 2vw;
     row-gap: 2vh;
-    grid-template-columns: repeat(2,34vw);
-    grid-template-rows: repeat(150, 59vh);
+    grid-template-columns: repeat(2,30vw);
+    grid-template-rows: repeat(150, 60vh);
     color: black;
     margin:2vh 0 0 4vw;
     padding: 0; 
@@ -1741,7 +1761,7 @@ header label:hover{
     padding: 0.4vh 0.7vw;
     text-transform: capitalize;
     font-size: 1.35em;
-    margin-left: 4.5vw;
+    margin-left: 3.5vw;
     align-items: stretch;
     justify-content: stretch;
 }
@@ -1763,12 +1783,12 @@ header label:hover{
 .informationBatalla{
     display: flex;
     width: 28vw;
-    height:22vh;
+    height:23vh;
     font-size: 14px;
     flex-direction: column;
     text-align: left;
     padding-left: 2vw;
-    margin-left: 3vw;
+    margin-left: 1vw;
     align-items: stretch;
     background: #fff1d4c2; 
     border-radius: 7px;
@@ -1808,12 +1828,17 @@ header label:hover{
     margin: 0 0 0 5.8vw;
 }
 .weaknesses{
+    width: 6vw;
     margin:9vh 4vw 0 0; 
     text-transform: capitalize;
 }
 .weaknesses2{
+    position: relative;
+    width: 6vw;
     text-transform: capitalize;
-    margin: 0 0 0 3.1vw;
+    margin: 0 0 0 2.8vw;
+    right: 2.8vw;
+
 }
 .contentEvolucion{
     display: flex;
@@ -1889,6 +1914,16 @@ header label:hover{
     margin:2vh 0 0 4vw;
     padding: 0; 
     margin-left: 20vw; 
+    margin-top: 4vh;
+}
+.regionPoke{
+    display: inline-block;
+    margin-left: 34vw;
+    color:rgb(0, 66, 190);
+    font-size: 1.3em;
+    padding: 0;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
 }
 .cardsEvolucion{
     background: #016ae2c5;
