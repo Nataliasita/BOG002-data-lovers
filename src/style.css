@@ -2006,3 +2006,27 @@ header label:hover{
     margin-top: 1vh;
     width: 8vw;
 }
+.btn-busqueda-batalla{
+    border-radius: 5px;
+    border-color: rgb(177, 127, 3);
+}
+.btn-busqueda-evo{
+    border-radius: 5px;
+    border-color: rgb(6, 3, 177);
+}
+.btn-busqueda1{
+    background: rgb(1, 28, 146);
+    color: white;
+}
+.btn-busqueda{
+    background: rgb(146, 88, 1);
+    color: white;
+}
+.btn-battle{
+    background: rgb(146, 88, 1);
+    color: white;
+}
+.btn-evo{
+    background: rgb(1, 28, 146);
+    color: white;
+}

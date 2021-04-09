@@ -70,7 +70,7 @@
                      <div id="pokemon-container-descendentes" class="pokemon-container-descendentes" style= "display:none;"> 
                     </div>
 
-                    <div class="interfaz_two_pokedex"><img src ="images/scizor.gif" class="objeto_2"><p class="objeto_3">Bienvenido Maestro pokemon<br><br>Aqui encontraras los pokemones clasificados por tipo y podras organizarlos de forma ascendente y descendentemente<br><br>Empezcemos.... </p></div>
+                    <div class="interfaz_two_pokedex" style= "display:none;"><img src ="images/scizor.gif" class="objeto_2"><p class="objeto_3">Bienvenido Maestro pokemon<br><br>Aqui encontraras los pokemones clasificados por tipo, Ademas podras organizarlos de forma ascendente y descendente<br><br>Empecemos.... </p></div>
 
                   <!-- contenedores pokemon por tipo-->
 
@@ -207,13 +207,13 @@
            
                     <h2 class="equipo">-------- Tu Equipo -------</h2>
                     <form>
-                        <label for="" class="equipo2" >Buscar por Nombre:</label><input type="text" id="texto" pattern="[A-Za-z]{3,10}" title="Nombre pokemon" autocomplete="on">
-                        <button type="button" class="btn-battle" id="buscar" >Buscar</button>
-                        <input type="reset" value="Reset">
+                        <label for="" class="equipo2" >Buscar por Nombre:</label><input type="text" id="texto" class="btn-busqueda-batalla" pattern="[A-Za-z]{3,10}" title="Nombre pokemon" autocomplete="on">
+                        <button type="button" class="btn-battle" id="buscar">Buscar</button>
+                        <input type="reset" class="btn-busqueda" value="Reset">
                     </form>
 
                     <form>
-                      <label for="" class="equipo2" > Num :</label><input type="number" id="number" step="000" min="000" max="251" ">
+                      <label for="" class="equipo2" > Num :</label><input type="number"  class="btn-busqueda-batalla" id="number" step="000" min="000" max="251">
                       <button type="button" class="btn-battle" id="buscar_num" >Buscar</button>
                     </form>
 
@@ -237,7 +237,7 @@
               <a href="#contentEvolucion" class="btn-flotante3" style= "display:none;"><img class="pikachu" src="images/pikaflotante.png">Return Up</a>
 
           <form>
-            <label for="" class="regionPoke">Pokemon por region: </label><input type="text" name="regiones" id="region" list="listaRegiones">
+            <label for="" class="regionPoke">Pokemon por region: </label><input type="text" class="btn-busqueda-evo" name="regiones" id="region" list="listaRegiones">
 
                             <datalist id="listaRegiones">
               
@@ -247,8 +247,8 @@
     
                              </datalist>
                              
-              <button type="button" class="btn-battle" id="buscar_region" >Buscar</button>
-              <input type="reset" value="Reset">
+              <button type="button" class="btn-evo" id="buscar_region" >Buscar</button>
+              <input type="reset" class="btn-busqueda1" value="Reset">
 
           </form>
 

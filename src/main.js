@@ -1412,13 +1412,13 @@ function pages () {
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
-        document.querySelector(".footer2").style.display="block"; 
+        document.querySelector(".pokemon-container").style.display="none";
         document.querySelector(".interfaz_two_pokedex").style.display="block";
         document.querySelector(".contentBatalla").style.display="none";
         document.querySelector(".footer3").style.display="none"; 
         document.querySelector(".contentEvolucion").style.display="none";
         document.querySelector(".footer4").style.display="none";
-         
+      
     }
     let mainBatalla = document.getElementById("batalla");
     mainBatalla.onclick = function(){
@@ -1427,6 +1427,7 @@ function pages () {
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="none";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
         document.querySelector(".footer2").style.display="none"; 
         document.querySelector(".contentBatalla").style.display="block";
         document.querySelector(".footer3").style.display="block"; 
@@ -1441,6 +1442,7 @@ function pages () {
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="none";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
         document.querySelector(".footer2").style.display="none"; 
         document.querySelector(".contentBatalla").style.display="none";
         document.querySelector(".footer3").style.display="none"; 
