@@ -972,8 +972,10 @@ function filter_types_pokemon () {
         document.querySelector(".contentPokedex").style.display="block";
         document.querySelector(".pokemon-container").style.display="none";
         document.querySelector(".pokemon-container-descendentes").style.display="none";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeSteel").style.display="grid";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_water = document.getElementById("agua");
@@ -987,7 +989,9 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeWater").style.display="grid";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
     }
 
     let filter_bug = document.getElementById("bicho");
@@ -1001,6 +1005,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeBug").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_dragon = document.getElementById("dragon");
@@ -1014,6 +1020,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeDragon").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_electric = document.getElementById("electrico");
@@ -1027,6 +1035,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeElectric").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_ghost = document.getElementById("fantasma");
@@ -1040,6 +1050,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeGhost").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_fire = document.getElementById("fuego");
@@ -1053,6 +1065,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeFire").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_fairy = document.getElementById("hada");
@@ -1066,6 +1080,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeFairy").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_ice = document.getElementById("hielo");
@@ -1079,6 +1095,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeIce").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_fighting = document.getElementById("lucha");
@@ -1092,6 +1110,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeFighting").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_normal = document.getElementById("normal");
@@ -1105,6 +1125,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeNormal").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_grass = document.getElementById("planta");
@@ -1118,6 +1140,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeGrass").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_psychic = document.getElementById("psiquico");
@@ -1131,6 +1155,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typePsychic").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_rock = document.getElementById("roca");
@@ -1144,6 +1170,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeRock").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_dark = document.getElementById("siniestro");
@@ -1157,6 +1185,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeDark").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_ground = document.getElementById("tierra");
@@ -1170,6 +1200,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeGround").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_poison = document.getElementById("veneno");
@@ -1183,6 +1215,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typePoison").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
     let filter_flying = document.getElementById("volador");
@@ -1196,6 +1230,8 @@ function filter_types_pokemon () {
         document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".allTypes").style.display="grid";
         document.querySelector(".pokemon-container-typeFlying").style.display="grid";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
     }
 }
@@ -1403,6 +1439,7 @@ function pages () {
         document.querySelector(".footer3").style.display="none"; 
         document.querySelector(".contentEvolucion").style.display="none";
         document.querySelector(".footer4").style.display="none"; 
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
     }
 
     let mainPokedex = document.getElementById("pokedex");
@@ -1433,7 +1470,9 @@ function pages () {
         document.querySelector(".footer3").style.display="block"; 
         document.querySelector(".contentEvolucion").style.display="none";
         document.querySelector(".btn-flotante2").style.display="block";
+        document.querySelector(".pokemon-container").style.display="none";
         document.querySelector(".footer4").style.display="none"; 
+        document.querySelector(".allTypes").style.display="none";
     }
     let mainEvolucion = document.getElementById("evolucion");
     mainEvolucion.onclick = function(){
@@ -1448,6 +1487,8 @@ function pages () {
         document.querySelector(".footer3").style.display="none"; 
         document.querySelector(".contentEvolucion").style.display="block";
         document.querySelector(".btn-flotante3").style.display="block";
+        document.querySelector(".pokemon-container").style.display="none";
+        document.querySelector(".allTypes").style.display="none";
         document.querySelector(".footer4").style.display="block"; 
     }
 
