@@ -3,40 +3,74 @@
 }
 body{
     margin: 0;
-    background-color: white;
+    /* background-color: white; */
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 .interfazInicial{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background: url("images/horizontal.jpg");
-    background-repeat: repeat;
+    background: url("images/fndHome.jpg");
+    background-repeat: no-repeat;
     padding: 0;
-    background-size: 50vh;
+    background-size:100% 100%;
     
 }
-.desktop{
+.desktop1{
+    position:absolute;
+    display:none;
+    height: 38vh;
+    width: 33vw;
+    margin-left:43vw;
+    /* background-position:center; */
+    background-position-y: center;
+    background-image: url("images/blueF.gif");
+    background-size: 130% 110%;
+    bottom: 3vh;
+    z-index: 1;
+    border-radius: 300px;
+}
+.desktop2{
     position:absolute;
     display: block;
-    height: 91vh;
-    width: 100vw;
-    margin: auto;
-    padding: 10vh 0 0 0;
-    align-items: center; 
-    
+    height: 41vh;
+    width: 23vw;
+    margin-left: 64vw;
+    bottom: 12vh;
+    background-position:center;
+    background-image: url("images/flameF.gif");
+    background-size: 180% 105%;
+    border-radius: 200px;
+   
+}
+.desktop3{
+    position:absolute;
+    display: block;
+    height: 41vh;
+    width: 23vw;
+    margin-left: 10vw;
+    background-position: center;
+    background-image: url("images/pikachuF.gif");
+    background-size: 180% 120%;
+    bottom: 10vh;
+    z-index: 2;
 }
 .btnInicio{ 
     position: absolute;
     width: 14vw;
     height: 28vh;
-    top: 53vh;
-    left: 41vw;
+    top: 56vh;
+    left: 43.7vw;
     background: url("images/btn12.png");
     background-size:100% 100% ;
     background-repeat: no-repeat;
     border-radius: 50%;
     border: indigo;
+    z-index: 5;
+}
+.btnInicio:hover{ 
+    cursor: pointer;
 }
 .mobileOne{
     width: 100vw;
@@ -52,9 +86,17 @@ body{
         }
         }
      @media only screen and (max-width: 465px) {
-    [class="desktop"] {
+    [class="desktop2"] {
       display: none;
     }
+    [class="desktop3"] {
+        display: none;
+      }
+    [class="interfazInicial"] {
+        background-image:none ;
+        background-color: rgb(0, 0, 51);
+    }
+
     }
     @media only screen and (max-width: 540px) {
         [class="btnInicio"] {
@@ -64,6 +106,7 @@ body{
             top: 62vh;
             left: 37vw;    
     }
+
     }
 header{
     width: 100vw;
@@ -83,7 +126,7 @@ header{
       header {
           background: url("images/061.png") center right no-repeat, url("images/quagsire.png") center left no-repeat;
           background-size: 17.2% 60%;
-          background-color: rgba(8, 107, 255, 0.521);
+          background-color: rgba(158, 165, 196, 0.645);
           margin-left: -20px;
         
     }
@@ -157,12 +200,15 @@ header label:hover{
     list-style:none;
     margin: 0;
     display: flex;
-    background: #177ECA;
-    border: 2px solid white;
+    background: #003f82;
+    border: 3px solid white;
     justify-content: flex-end;
 }
 .container li{
-    border: 1px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
+#home{
+    border-left: 6px solid rgb(255, 255, 255);
 }
 .container li:hover{
     background: rgba(0,0,0,0.3);
@@ -224,6 +270,14 @@ header label:hover{
     align-items: flex-start;
     text-align: center;
     border-radius: 20px;
+    
+}
+.linkH{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.item1:hover{
+    background: #3e004d;
 }
 .imgInicio{
     width: 21vw;
@@ -241,6 +295,9 @@ header label:hover{
     text-align: center;
     padding: 3vh 1vw;
     border-radius: 20px;
+}
+.item2:hover{
+    background: #3e004d;
 }
 .imgInicio2{
     width: 17vw;
@@ -260,6 +317,9 @@ header label:hover{
     padding: 3vh 1vw;
     border-radius: 20px;
 }
+.item3:hover{
+    background: #3e004d;
+}
 .item4{
     position: absolute;
     width: 21vw;
@@ -271,6 +331,9 @@ header label:hover{
     align-items: flex-end;
     text-align: center;
     border-radius: 20px;
+}
+.item4:hover{
+    background: #3e004d;
 }
 .gif{
     position: absolute;
@@ -345,18 +408,25 @@ header label:hover{
     font-weight: bold;
     margin: 0;
     background: url("images/pokedex1.png");
-    background-repeat: space space;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 220% 140%;
     }
 .pokedex{
+    width: 100vw;
+    height: 14vh;
     display: inline-block;
-    margin-left: 6vw;
-    color:rgb(190, 0, 0);
-    -webkit-text-stroke: 2px rgb(190, 0, 0);
-    font-size: 2.2em;
-    background: rgba(255, 250, 250, 0.767);
-    border-radius: 5px;
+    margin-left:0vw;
+    position: absolute;
+    margin-top:0;
+    background-color: #CB2438;
+    color: #ffffff;
+    /* -webkit-text-stroke: 2px rgb(190, 0, 0); */
+    font-size: 2em;
+    text-align: center;
+    padding-top: 3vh;
+    position: absolute;
+    font-weight: 800;
 }
 .btn-flotante {
 	font-size: 0.8em; 
@@ -368,7 +438,7 @@ header label:hover{
 	padding: 40px 25px; 
 	position: fixed;
 	bottom: 5vh;
-    left: 8vw;
+    left: 13vw;
 	transition: all 900ms ease 0ms;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	z-index: 99;
@@ -406,7 +476,7 @@ header label:hover{
     left: 30vw;
     width: 30vw;
     color: rgba(255, 255, 255, 0.966) ;
-    background:rgba(190, 0, 0, 0.685)  ;
+    background: #CB2438;
     border-radius: 30px;
     padding-left: 2vw;
     padding-top: 2vh;
@@ -422,10 +492,10 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:4vh 0 0 4vw;
+
     padding: 0; 
     margin-left: 20vw; 
-    margin-top: 8vh;
+    margin-top: 20vh;
 }
 .pokemon-container-descendentes{
     display: grid;
@@ -436,13 +506,12 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:4vh 0 0 4vw;
     padding: 0; 
     margin-left: 20vw; 
-    margin-top: 8vh;
+    margin-top: 20vh;
 }
 .cards{
-    background: #ff80809a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -501,12 +570,13 @@ header label:hover{
 .contenedor_ordenar{
     display: flex;
     width: 14vw;
-    height: 25vh;
+    height: 27.9vh;
     background: #CB2438;
     margin-left: 3vw;
     padding: 0;
     border-radius: 10px;
-    bottom: 20px;
+    top: 20vh;
+    position: absolute;
 }
 .contenedor_ordenar h4{
     position: relative;
@@ -524,7 +594,7 @@ header label:hover{
     padding: 0;
     padding-top: 1.8vh;
     height: 16vh;
-    width: 14vw;
+    width: 13vw;
     border-radius: 5px;
 }
 .contenedor_ordenar a{
@@ -535,17 +605,18 @@ header label:hover{
 .contenedor_ordenar li{
     list-style: none;
     padding: 0;
-    margin-left:-1vw;
+    margin-left:-2vw;
 }
 .contenedor_filtro{
     display: flex;
-    width: 13vw;
-    height: 77vh;
+    width: 14vw;
+    height: 7 9vh;
     background: #CB2438;
     margin-left: 3vw;
     padding: 0;
     border-radius: 10px;
-    margin-top: 20vh;
+    margin-top: 50vh;
+    position: absolute;
 }
 .contenedor_filtro h4{
     position: relative;
@@ -587,6 +658,240 @@ header label:hover{
     margin-top: -10vh;
     text-align: left;
 }
+.clasificacion1{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:#525252;
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion2{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:#051c9c;
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion3{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:#c2a70b;
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion4{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:#bb008c;
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion5{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:#fdf61c;
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion6{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:#821db5;
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion7{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(232, 129, 33);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion8{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(211, 28, 205);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion9{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(28, 183, 211);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion10{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(157, 125, 0);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion11{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(124, 15, 0);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion12{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(0, 124, 4);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion13{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(0, 116, 124);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion14{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(94, 94, 94);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion15{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(55, 8, 94);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion16{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(94, 70, 8);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion17{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(77, 8, 94);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
+.clasificacion18{
+    display: flex;
+    position: absolute;
+    margin-left: 0;
+    background-color:rgb(33, 187, 185);
+    font-size: 1.4em;
+    width: 70vw;
+    color: #fcfcfc;
+    margin-top: -10vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1vh 0 1vh 3vw;
+}
 .allTypes{
     display: grid;
     height: 8vh;
@@ -601,7 +906,7 @@ header label:hover{
     margin-left: 10vw;
     justify-content: stretch; 
     align-items: stretch;
-    margin-top: 8vh;
+    margin-top: 22vh;
 }
 .pokemon-container-typeSteel{
     display: grid;
@@ -621,7 +926,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsSteel{
-    background: #b1a99a9a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -680,7 +985,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsWater{
-    background: #2949b39a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -739,7 +1044,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsBug{
-    background: #b393299a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -798,7 +1103,7 @@ header label:hover{
     flex-wrap: nowrap;
 }
 .cardsDragon{
-    background: #b329759a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -857,7 +1162,7 @@ header label:hover{
     flex-wrap: nowrap;
 }
 .cardsElectric{
-    background: #dfdc299a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -915,7 +1220,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsGhost{
-    background: #9c29df9a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -973,7 +1278,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsFire{
-    background: #ffd3809a;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1031,7 +1336,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsFairy{
-    background: #d929df73;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1089,7 +1394,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsIce{
-    background: #29bbdf73;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1147,7 +1452,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsFighting{
-    background: #cf980073;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1205,7 +1510,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsNormal{
-    background: #ce000073;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1263,7 +1568,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsGrass{
-    background: #22ce0073;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1321,7 +1626,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsPsychic{
-    background: #00ceac4b;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1379,7 +1684,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsRock{
-    background: #5658584b;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1437,7 +1742,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsDark{
-    background: #7300a04b;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1495,7 +1800,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsGround{
-    background: #a865004b;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1553,7 +1858,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsPoison{
-    background: #26012b4b;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1611,7 +1916,7 @@ header label:hover{
     align-items: stretch;
 }
 .cardsFlying{
-    background: #02b0b64b;
+    background: #f2f2f2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -1666,33 +1971,53 @@ header label:hover{
     display: flex;
     position: absolute;
     width: 100vw;
-    height: 7710vh;
+    height: 4170vh;
     padding: 0;
     font-weight: bold;
     margin: 0;
     background: url("images/batalla1.png");
-    background-repeat: space space;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 220% 140%;
 }
 .equipo{
+    width: 100vw;
+    height: 12vh;
     display: inline-block;
-    margin-left: 36vw;
-    color:rgb(190, 108, 0);
-    -webkit-text-stroke: 2px rgb(190, 108, 0);
-    font-size: 2.0em;
-    padding: 0;
-    background: rgba(255, 254, 250, 0.767);
-    border-radius: 5px;
+    margin-left:0vw;
+    position: absolute;
+    margin-top:1vh;
+    background-color: rgb(190, 108, 0);
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 3vh;
+    position: absolute;
+    font-weight: 800;
+}
+.fnd-1{
+    width: 100vw;
+    background-color: rgb(190, 108, 0);
 }
 .equipo2{
     display: inline-block;
-    margin-left: 34vw;
-    color:rgb(190, 108, 0);
+    margin-left: 26vw;
+    color:rgb(248, 248, 248);
     font-size: 1.3em;
     padding: 0;
-    margin-top: 1vh;
-    margin-bottom: 2vh;
+    margin-top: 18vh;
+    margin-bottom: 1vh;
+    z-index: 2;
+}
+.equipo3{
+    display: inline-block;
+    margin-left: 34vw;
+    color:rgb(248, 248, 248);
+    font-size: 1.3em;
+    padding: 0 0 3vh 0;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    z-index: 2;
 }
 .btn-flotante2 {
 	font-size: 0.8em; 
@@ -1704,7 +2029,7 @@ header label:hover{
 	padding: 40px 25px; 
 	position: fixed;
 	bottom: 5vh;
-    left: 6vw;
+    left: 3vw;
 	transition: all 900ms ease 0ms;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	z-index: 99;
@@ -1728,46 +2053,54 @@ header label:hover{
     align-items: flex-end;
     width: 100vw;
     height: 10vh;
-    margin-top: 7520vh;
+    margin-top: 3970vh;
     background: #dfb01498 ;
     top:190vh;
     z-index: 9;
 }
 .pokemon-batalla{
     display: grid;
-    height: 8vh;
-    width: 70vw;
+    height: 4120vh;
+    width: 90vw;
     column-gap: 2vw;
-    row-gap: 2vh;
-    grid-template-columns: repeat(2,30vw);
-    grid-template-rows: repeat(150, 60vh);
+    row-gap: 1vh;
+    grid-template-columns: repeat(3,28vw);
+    grid-template-rows: repeat(150, 48vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:4vh 0 0 6vw;
     padding: 0; 
-    margin-left: 17vw; 
+    /* background-color: #3e004d; */
 }
 .cardsBatalla{
     background: #ffe880c5;
-    text-align: center;
     margin: 0;
     border-radius: 10px;
     transition: all 0.5s;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 48vh;
 }   
 .namePokeBatalla{
-    margin:0;
-    width:25vw ;
+    width:12vw ;
     text-align: center;
     color: rgb(109, 71, 0);
     padding: 0.4vh 0.7vw;
     text-transform: capitalize;
     font-size: 1.35em;
-    margin-left: 3.5vw;
-    align-items: stretch;
-    justify-content: stretch;
+    margin-left: 0.5vw;
+    margin-top:38vh;
+    position: absolute;
+    /* background-color: chartreuse; */
 }
 .imgPokeBatalla{
-    width: 11vw;
-    height: 21vh;
+    display: flex;
+    width: 12vw;
+    height: 23vh;
+    position: absolute;
+    margin-left: 0.5vw;
+    margin-top: 14vh;
+    /* background-color: brown; */
 }
 .numPokeBatalla{
     color: rgb(255, 255, 255);
@@ -1779,28 +2112,32 @@ header label:hover{
     border-top-left-radius: 10px;
     border-top-right-radius:10px; 
     font-size: 1.3em;
+    position: absolute;
+    height: 7vh;
+    width: 28vw;
 }
 .informationBatalla{
     display: flex;
-    width: 28vw;
-    height:23vh;
+    width: 15vw;
+    height:40vh;
+    position: absolute;
     font-size: 14px;
     flex-direction: column;
     text-align: left;
-    padding-left: 2vw;
-    margin-left: 1vw;
+    padding-left: 1.5vw;
+    margin-left: 13vw;
+    margin-top: 8vh;
     align-items: stretch;
-    background: #fff1d4c2; 
+    background: #fffcf7; 
     border-radius: 7px;
     color: #520101;
-    flex-wrap: wrap;
 }
 .typesPokeBatalla{
     text-transform: capitalize;
-    margin:  0 0 0 7vw;
+    margin:  0 0 0 2vw;
     padding-top: 1vh;
     padding-left: 2vw;
-    padding-right: 2vw;
+    padding-right: 1vw;
     background: #ffa93a;
     border-top-left-radius: 10px;
     border-top-right-radius:10px;
@@ -1810,7 +2147,7 @@ header label:hover{
 }
 .typesPoke2Batalla{
     text-transform: capitalize;
-    margin: 0 0 1vh 9vw;
+    margin: 0 0 1vh 4.4vw;
     padding-left: 3vw;
     padding-bottom: 1vh;
     background: #ffa93a;
@@ -1820,16 +2157,19 @@ header label:hover{
     color: rgb(255, 255, 255);
 }
 .resistant{
-    margin: 0;
+    margin: 2vh 0 0 0;
     text-transform: capitalize;
+    /* background-color: cornflowerblue; */
 }
 .resistant2{
     text-transform: capitalize;
     margin: 0 0 0 5.8vw;
+    /* background-color: crimson; */
 }
 .weaknesses{
-    width: 6vw;
-    margin:9vh 4vw 0 0; 
+    width: 9.5vw;
+    margin:2vh 4vw 0 0; 
+    /* background-color: rgb(175, 11, 184); */
     text-transform: capitalize;
 }
 .weaknesses2{
@@ -1837,7 +2177,8 @@ header label:hover{
     width: 6vw;
     text-transform: capitalize;
     margin: 0 0 0 2.8vw;
-    right: 2.8vw;
+    left: 2.5vw;
+    /* background-color: darkgreen; */
 
 }
 .contentEvolucion{
@@ -1849,19 +2190,26 @@ header label:hover{
     font-weight: bold;
     margin: 0;
     background: url("images/Evolucion.png");
-    background-repeat: space space;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 220% 140%;
 }
 .equipoEvo{
+
+    width: 100vw;
+    height: 12vh;
     display: inline-block;
-    margin-left: 34vw;
-    color:  rgb(27, 53, 202);
-    -webkit-text-stroke: 2px rgb(27, 53, 202);
+    margin-left:0vw;
+    position: absolute;
+    margin-top:0;
+    background-color:rgb(0, 17, 114);
+    color: #ffffff;
+    /* -webkit-text-stroke: 2px rgb(190, 0, 0); */
     font-size: 2em;
-    padding: 0;
-    background: rgba(250, 251, 255, 0.767);
-    border-radius: 5px;
+    text-align: center;
+    padding-top: 3vh;
+    position: absolute;
+    font-weight: 800;
 }
 .btn-flotante3 {
 	font-size: 0.8em; 
@@ -1916,17 +2264,21 @@ header label:hover{
     margin-left: 20vw; 
     margin-top: 4vh;
 }
+.form_evo{
+    background-color:rgb(0, 17, 114);
+}
 .regionPoke{
     display: inline-block;
-    margin-left: 34vw;
-    color:rgb(0, 66, 190);
+    margin-left: 29vw;
     font-size: 1.3em;
     padding: 0;
-    margin-top: 1vh;
-    margin-bottom: 2vh;
+    margin-top: 13vh;
+    margin-bottom: 2vh; 
+    color: #ffffff;
+    padding-bottom: 3vh;
 }
 .cardsEvolucion{
-    background: #016ae2c5;
+    background: #016ae2;
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -2015,18 +2367,58 @@ header label:hover{
     border-color: rgb(6, 3, 177);
 }
 .btn-busqueda1{
-    background: rgb(1, 28, 146);
+    border: rgb(1, 28, 146) 2px solid;
+    background-color: rgb(0, 17, 114);
     color: white;
+    height: 4vh;
+    width: 6vw;
+    border-radius: 5px;
 }
 .btn-busqueda{
-    background: rgb(146, 88, 1);
+    border: rgb(146, 88, 1) 2px solid;
     color: white;
+    height: 4vh;
+    width: 6vw;
+    border-radius: 5px;
+    background-color: rgb(190, 108, 0);
+   
 }
 .btn-battle{
     background: rgb(146, 88, 1);
     color: white;
+    border: 0;
+    height: 4vh;
+    width: 8vw;
+    border-radius: 5px;
+    margin-left: 0.8vw;
 }
 .btn-evo{
-    background: rgb(1, 28, 146);
+    background: rgb(0, 33, 181);
     color: white;
+    border: 0;
+    height: 4vh;
+    width: 8vw;
+    border-radius: 5px;
+    margin-left: 0.8vw;
+}
+
+.btn-busqueda1:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(1, 28, 146) ;
+    cursor: pointer;
+}
+.btn-busqueda:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(146, 88, 1);
+    cursor: pointer;
+}
+.btn-battle:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(146, 88, 1);
+    cursor: pointer;
+}
+.btn-evo:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(1, 28, 146) ;
+    cursor: pointer;
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="images/poke.png" rel="icon"/>
     <title> Pokemon </title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -10,7 +11,11 @@
     
       <section class="interfazInicial">
 
-        <div><img class="desktop" src="images/desktop.jpg" display="none"></div>
+        <div>
+            <div class="desktop1"  display="none"></div>
+            <div class="desktop2"  display="none"></div>
+            <div class="desktop3"  display="none"></div>
+        </div>
         <img class="mobileOne" src="images/mobile.jpg" display="block" >
         <button class="btnInicio" id="btnInicio"></button>
 
@@ -39,17 +44,17 @@
         
           <section id="contentHome" class="contentHome" style= "display:none;" >
 
-            <article class="item1">Comunidad<img class="imgInicio" src="images/community.png"></article>
+           <a class="linkH" href="https://pokemongolive.com/es/"> <article class="item1">Comunidad<img class="imgInicio" src="images/community.png"></article></a>
        
-            <article class="item2">Datos Curiosos<img class="imgInicio2" src="images/datos curiosos.jpg" ></article>
+           <a  class="linkH" href="https://rewards.nianticlabs.com/pokemongo/signin"><article class="item2">Datos Curiosos<img class="imgInicio2" src="images/datos curiosos.jpg" ></article></a>
        
             <img class="gif" src="images/gastly.gif">
 
-            <article class="item3">Evento del mes<img class="imgInicio2" src="images/Evento.jpg" ></article>
+            <a  class="linkH" href="https://pokemongolive.com/es/events/"> <article class="item3">Evento del mes<img class="imgInicio2" src="images/Evento.jpg" ></article></a>
        
-            <article class="item4">Novedades<img class= "imgInicio2" src="images/NOV.jpg"></article>
-       
-
+            <a  class="linkH" href="https://pokemongolive.com/es/play-where-you-are/"><article class="item4">Novedades<img class= "imgInicio2" src="images/NOV.jpg"></article></a>
+            
+            
             <footer class="footer1" style= "display:none;">
            
             </footer>
@@ -60,7 +65,7 @@
 
                         <a href="#contenedor_filtro" class="btn-flotante" style= "display:none;">Return Up<img class="pikachu" src="images/pikaflotante.png"></a>
 
-                        <h1 class="pokedex">Pokedex ---------------</h1>
+                        <h1 class="pokedex">Pokedex</h1>
 
                    <!-- contenedores pokemon por orden -->
           
@@ -77,117 +82,117 @@
                   <div class="allTypes" id="allTypes" style= "display:none;" >
                         
                           <div id="pokemon-container-typeSteel" class="pokemon-container-typeSteel" style= "display:none;">  
-                          <h3 class="clasificacion">_________ Tipo Acero _________</h3>
+                          <h3 class="clasificacion1">Tipo Acero </h3>
                           </div> 
                         
                           <div id="pokemon-container-typeWater" class="pokemon-container-typeWater" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Agua _________</h3>
+                            <h3 class="clasificacion2">Tipo Agua</h3>
                           </div> 
 
                           <div id="pokemon-container-typeBug" class="pokemon-container-typeBug" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Bicho _________</h3>
+                            <h3 class="clasificacion3"> Tipo Bicho </h3>
                           </div> 
 
                           <div id="pokemon-container-typeDragon" class="pokemon-container-typeDragon" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Dragon _________</h3>
+                            <h3 class="clasificacion4">Tipo Dragon</h3>
                           </div> 
 
                           <div id="pokemon-container-typeElectric" class="pokemon-container-typeElectric" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Electrico _________</h3>
+                            <h3 class="clasificacion5"> Tipo Electrico</h3>
                           </div> 
 
                           <div id="pokemon-container-typeGhost" class="pokemon-container-typeGhost" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Fantasma _________</h3>
+                            <h3 class="clasificacion6">Tipo Fantasma</h3>
                           </div> 
 
                           <div id="pokemon-container-typeFire" class="pokemon-container-typeFire" style= "display:none;">
-                            <h3 class="clasificacion">_________ Tipo Fuego _________</h3> 
+                            <h3 class="clasificacion7">Tipo Fuego</h3> 
                           </div> 
 
                           <div id="pokemon-container-typeFairy" class="pokemon-container-typeFairy" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Hada _________</h3>
+                            <h3 class="clasificacion8">Tipo Hada </h3>
                           </div> 
 
                           <div id="pokemon-container-typeIce" class="pokemon-container-typeIce" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Hielo _________</h3>
+                            <h3 class="clasificacion9">Tipo Hielo</h3>
                           </div> 
 
                           <div id="pokemon-container-typeFighting" class="pokemon-container-typeFighting" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Lucha _________</h3>
+                            <h3 class="clasificacion10">Tipo Lucha</h3>
                           </div> 
 
                           <div id="pokemon-container-typeNormal" class="pokemon-container-typeNormal" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Normal _________</h3>
+                            <h3 class="clasificacion11"> Tipo Normal</h3>
                           </div> 
 
                           <div id="pokemon-container-typeGrass" class="pokemon-container-typeGrass" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Planta _________</h3>
+                            <h3 class="clasificacion12"> Tipo Planta</h3>
                           </div> 
 
                           <div id="pokemon-container-typePsychic" class="pokemon-container-typePsychic" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Psiquico _________</h3>
+                            <h3 class="clasificacion13">Tipo Psiquico</h3>
                           </div> 
 
                           <div id="pokemon-container-typeRock" class="pokemon-container-typeRock" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Roca _________</h3>
+                            <h3 class="clasificacion14">Tipo Roca </h3>
                           </div> 
 
                           <div id="pokemon-container-typeDark" class="pokemon-container-typeDark" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Siniestro _________</h3>
+                            <h3 class="clasificacion15">Tipo Siniestro</h3>
                           </div> 
 
                           <div id="pokemon-container-typeGround" class="pokemon-container-typeGround" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Tierra _________</h3>
+                            <h3 class="clasificacion16">Tipo Tierra </h3>
                           </div> 
 
                           <div id="pokemon-container-typePoison" class="pokemon-container-typePoison" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Veneno _________</h3>
+                            <h3 class="clasificacion17">Tipo Veneno</h3>
                           </div> 
 
                           <div id="pokemon-container-typeFlying" class="pokemon-container-typeFlying" style= "display:none;">  
-                            <h3 class="clasificacion">_________ Tipo Volador _________</h3>
+                            <h3 class="clasificacion18"> Tipo Volador</h3>
                           </div> 
 
                   </div>
 
               <div class="contenedor_ordenar" style="display: block;">
              
-                <h4>Ordenar por Numero:</h4>
+                <h4>Ordena por Numero:</h4>
 
                     <form class="ordenar"> 
                       <ul>
-                      <li id="order"><a href="#pokemon-container"><input type="checkbox"> De N° 1 a N° 251</a></li><br>
-                      <li id="descendentes"><a href="#pokemon-container-descendentes"><input type="checkbox">De N° 251 a N° 1</a></li>
+                      <li id="order"><a href="#pokemon-container"><input  id="org" type="radio" checked> De N° 1 a N° 251</a></li><br>
+                      <li id="descendentes"><a href="#pokemon-container-descendentes"><input type="radio">De N° 251 a N° 1</a></li>
                       </ul>
                     </form>
                </div>
         
                   <div class="contenedor_filtro" id ="contenedor_filtro" style="display: block;">
 
-                    <h4>Filtrar por Tipo:</h4><br>
+                    <h4>Filtra por Tipo:</h4><br>
 
                        <form class="Filtrar">
                           <ul>
                            <br>
-                           <li id="todos"><a href="#allTypes"><input type="checkbox" id="checkAll" onclick="function_of_filter()">Todos</a></li>
-                           <li id="acero"><a href="#pokemon-container-typeSteel"><input type="checkbox">Acero</a></li>
-                           <li id="agua"><a href="#pokemon-container-typeWater"><input type="checkbox">Agua</a></li>
-                           <li id="bicho"><a href="#pokemon-container-typeBug"><input type="checkbox">Bicho</a></li>
-                           <li id="dragon"><a href="#pokemon-container-typeDragon"><input type="checkbox">Dragon</a></li>
-                           <li id="electrico"><a href="#pokemon-container-typeElectric"><input type="checkbox">Electrico</a></li>
-                           <li id="fantasma"><a href="#pokemon-container-typeGhost"><input type="checkbox">Fantasma</a></li>
-                           <li id="fuego"><a href="#pokemon-container-typeFire"><input type="checkbox">Fuego</a></li>
-                           <li id="hada"><a href="#pokemon-container-typeFairy"><input type="checkbox">Hada</a></li>
-                           <li id="hielo"><a href="#pokemon-container-typeIce"><input type="checkbox">Hielo</a></li>
-                           <li id="lucha"><a href="#pokemon-container-typeFighting"><input type="checkbox">Lucha</a></li>
-                           <li id="normal"><a href="#pokemon-container-typeNormal"><input type="checkbox">Normal</a></li>
-                           <li id="planta"><a href="#pokemon-container-typeGrass"><input type="checkbox">Planta</a></li>
-                           <li id="psiquico"><a href="#pokemon-container-typePsychic"><input type="checkbox">Psiquico</a></li>
-                           <li id="roca"><a href="#pokemon-container-typeRock"><input type="checkbox">Roca</a></li>
-                           <li id="siniestro"><a href="#pokemon-container-typeDark"><input type="checkbox">Siniestro</a></li>
-                           <li id="tierra"><a href="#pokemon-container-typeGround"><input type="checkbox">Tierra</a></li>
-                           <li id="veneno"><a href="#pokemon-container-typePoison"><input type="checkbox">Veneno</a></li>
-                           <li id="volador"><a href="#pokemon-container-typeFlying"><input type="checkbox">Volador</a></li>
+                           <li id="todos"><a href="#allTypes"><input type="radio" id="checkAll" onclick="function_of_filter()" checked>Todos</a></li>
+                           <li id="acero"><a href="#pokemon-container-typeSteel"><input type="radio">Acero</a></li>
+                           <li id="agua"><a href="#pokemon-container-typeWater"><input type="radio">Agua</a></li>
+                           <li id="bicho"><a href="#pokemon-container-typeBug"><input type="radio">Bicho</a></li>
+                           <li id="dragon"><a href="#pokemon-container-typeDragon"><input type="radio">Dragon</a></li>
+                           <li id="electrico"><a href="#pokemon-container-typeElectric"><input type="radio">Electrico</a></li>
+                           <li id="fantasma"><a href="#pokemon-container-typeGhost"><input type="radio">Fantasma</a></li>
+                           <li id="fuego"><a href="#pokemon-container-typeFire"><input type="radio">Fuego</a></li>
+                           <li id="hada"><a href="#pokemon-container-typeFairy"><input type="radio">Hada</a></li>
+                           <li id="hielo"><a href="#pokemon-container-typeIce"><input type="radio">Hielo</a></li>
+                           <li id="lucha"><a href="#pokemon-container-typeFighting"><input type="radio">Lucha</a></li>
+                           <li id="normal"><a href="#pokemon-container-typeNormal"><input type="radio">Normal</a></li>
+                           <li id="planta"><a href="#pokemon-container-typeGrass"><input type="radio">Planta</a></li>
+                           <li id="psiquico"><a href="#pokemon-container-typePsychic"><input type="radio">Psiquico</a></li>
+                           <li id="roca"><a href="#pokemon-container-typeRock"><input type="radio">Roca</a></li>
+                           <li id="siniestro"><a href="#pokemon-container-typeDark"><input type="radio">Siniestro</a></li>
+                           <li id="tierra"><a href="#pokemon-container-typeGround"><input type="radio">Tierra</a></li>
+                           <li id="veneno"><a href="#pokemon-container-typePoison"><input type="radio">Veneno</a></li>
+                           <li id="volador"><a href="#pokemon-container-typeFlying"><input type="radio">Volador</a></li>
                           <br>
                           </ul>  
                         </form>
@@ -205,15 +210,15 @@
 
             <section class="contentBatalla" id="contentBatalla" style= "display:none;">
            
-                    <h2 class="equipo">-------- Tu Equipo -------</h2>
-                    <form>
-                        <label for="" class="equipo2" >Buscar por Nombre:</label><input type="text" id="texto" class="btn-busqueda-batalla" pattern="[A-Za-z]{3,10}" title="Nombre pokemon" autocomplete="on">
+                    <h2 class="equipo"> Selecciona tu Equipo </h2>
+                    <form class="fnd-1">
+                        <label for="" class="equipo2" >Busca por Nombre: <input type="text" id="texto" class="btn-busqueda-batalla" pattern="[A-Za-z]{3,10}" title="Nombre pokemon" autocomplete="on"></label>
                         <button type="button" class="btn-battle" id="buscar">Buscar</button>
                         <input type="reset" class="btn-busqueda" value="Reset">
                     </form>
 
-                    <form>
-                      <label for="" class="equipo2" > Num :</label><input type="number"  class="btn-busqueda-batalla" id="number" step="000" min="000" max="251">
+                    <form class="fnd-1">
+                      <label for="" class="equipo3" > Numero: <input type="number"  class="btn-busqueda-batalla" id="number" step="000" min="000" max="251"> </label>
                       <button type="button" class="btn-battle" id="buscar_num" >Buscar</button>
                     </form>
 
@@ -232,12 +237,12 @@
 
            <section class="contentEvolucion" id="contentEvolucion" style= "display:none;">
 
-              <h2 class="equipoEvo">-------- Poke - Evoluciones -------</h2>
+              <h2 class="equipoEvo"> Poke - Evoluciones </h2>
 
               <a href="#contentEvolucion" class="btn-flotante3" style= "display:none;"><img class="pikachu" src="images/pikaflotante.png">Return Up</a>
 
-          <form>
-            <label for="" class="regionPoke">Pokemon por region: </label><input type="text" class="btn-busqueda-evo" name="regiones" id="region" list="listaRegiones">
+          <form class="form_evo"> 
+            <label for="" class="regionPoke">Pokemon por region: <input type="text" class="btn-busqueda-evo" name="regiones" id="region" list="listaRegiones"> </label>
 
                             <datalist id="listaRegiones">
               
