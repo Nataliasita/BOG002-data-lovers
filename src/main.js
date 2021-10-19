@@ -1465,6 +1465,7 @@ function pages () {
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="none";
         document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".footer2").style.display="none"; 
         document.querySelector(".contentBatalla").style.display="block";
         document.querySelector(".footer3").style.display="block"; 
@@ -1482,6 +1483,7 @@ function pages () {
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="none";
         document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".footer2").style.display="none"; 
         document.querySelector(".contentBatalla").style.display="none";
         document.querySelector(".footer3").style.display="none"; 
