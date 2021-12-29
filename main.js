@@ -110,7 +110,8 @@ function order_pokemon (){
     let order_general = document.getElementById("order");
     order_general.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -123,7 +124,8 @@ function order_pokemon (){
     let order_descendentes = document.getElementById("descendentes");
     order_descendentes.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -933,7 +935,8 @@ function filter_types_pokemon () {
     let filter_general = document.getElementById("todos");
     filter_general.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -966,7 +969,8 @@ function filter_types_pokemon () {
     let filter_steel = document.getElementById("acero");
     filter_steel.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -981,7 +985,8 @@ function filter_types_pokemon () {
     let filter_water = document.getElementById("agua");
     filter_water.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -997,7 +1002,8 @@ function filter_types_pokemon () {
     let filter_bug = document.getElementById("bicho");
     filter_bug.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1012,7 +1018,8 @@ function filter_types_pokemon () {
     let filter_dragon = document.getElementById("dragon");
     filter_dragon.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1027,7 +1034,8 @@ function filter_types_pokemon () {
     let filter_electric = document.getElementById("electrico");
     filter_electric.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1042,7 +1050,8 @@ function filter_types_pokemon () {
     let filter_ghost = document.getElementById("fantasma");
     filter_ghost.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none";
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1057,7 +1066,8 @@ function filter_types_pokemon () {
     let filter_fire = document.getElementById("fuego");
     filter_fire.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1072,7 +1082,8 @@ function filter_types_pokemon () {
     let filter_fairy = document.getElementById("hada");
     filter_fairy.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1087,7 +1098,8 @@ function filter_types_pokemon () {
     let filter_ice = document.getElementById("hielo");
     filter_ice.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1102,7 +1114,8 @@ function filter_types_pokemon () {
     let filter_fighting = document.getElementById("lucha");
     filter_fighting.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1117,7 +1130,8 @@ function filter_types_pokemon () {
     let filter_normal = document.getElementById("normal");
     filter_normal.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1132,7 +1146,8 @@ function filter_types_pokemon () {
     let filter_grass = document.getElementById("planta");
     filter_grass.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1147,7 +1162,8 @@ function filter_types_pokemon () {
     let filter_psychic = document.getElementById("psiquico");
     filter_psychic.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1162,7 +1178,8 @@ function filter_types_pokemon () {
     let filter_rock = document.getElementById("roca");
     filter_rock.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1177,7 +1194,8 @@ function filter_types_pokemon () {
     let filter_dark = document.getElementById("siniestro");
     filter_dark.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1192,7 +1210,8 @@ function filter_types_pokemon () {
     let filter_ground = document.getElementById("tierra");
     filter_ground.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1207,7 +1226,8 @@ function filter_types_pokemon () {
     let filter_poison = document.getElementById("veneno");
     filter_poison.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1222,7 +1242,8 @@ function filter_types_pokemon () {
     let filter_flying = document.getElementById("volador");
     filter_flying.onclick =function (){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1421,6 +1442,7 @@ function pages () {
     botonInicio.onclick = function (){
         document.querySelector(".interfazInicial").style.display="none";
         document.querySelector(".header").style.display="block"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="block"; 
         document.querySelector(".footer1").style.display="block"; 
         document.querySelector(".contentPokedex").style.display="none";
@@ -1432,6 +1454,7 @@ function pages () {
     let mainHome = document.getElementById("home");
     mainHome.onclick = function(){
         document.querySelector(".header").style.display="block"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="block"; 
         document.querySelector(".footer1").style.display="block"; 
         document.querySelector(".contentPokedex").style.display="none";
@@ -1445,7 +1468,8 @@ function pages () {
     let mainPokedex = document.getElementById("pokedex");
     mainPokedex.onclick = function(){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="block";
@@ -1460,7 +1484,8 @@ function pages () {
     let mainBatalla = document.getElementById("batalla");
     mainBatalla.onclick = function(){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="none";
@@ -1478,7 +1503,8 @@ function pages () {
     let mainEvolucion = document.getElementById("evolucion");
     mainEvolucion.onclick = function(){
         document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="block"; 
+        document.querySelector(".header").style.display="none"; 
+        document.querySelector(".container").style.display="block";
         document.querySelector(".contentHome").style.display="none"; 
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="none";

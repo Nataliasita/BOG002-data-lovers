@@ -11,27 +11,13 @@ body{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background: url("images/fndHome.jpg");
+    background: url("images/poke3.jpg");
     background-repeat: no-repeat;
     padding: 0;
     background-size:100% 100%;
     
 }
-.desktop1{
-    position:absolute;
-    display:none;
-    height: 38vh;
-    width: 33vw;
-    margin-left:43vw;
-    /* background-position:center; */
-    background-position-y: center;
-    background-image: url("images/blueF.gif");
-    background-size: 130% 110%;
-    bottom: 3vh;
-    z-index: 1;
-    border-radius: 300px;
-}
-.desktop2{
+/* .desktop2{
     position:absolute;
     display: block;
     height: 41vh;
@@ -43,25 +29,59 @@ body{
     background-size: 180% 105%;
     border-radius: 200px;
    
+} */
+.img_anfitrion{
+    height: 60vh;
+    border-radius: 1000px;
+    clip-path: polygon(0% 0%, 62% 10%, 85% 50%, 66% 93%, 0% 100%);
+    animation: anfitrion 7S forwards;
 }
-.desktop3{
-    position:absolute;
-    display: block;
-    height: 41vh;
-    width: 23vw;
-    margin-left: 10vw;
-    background-position: center;
-    background-image: url("images/pikachuF.gif");
-    background-size: 180% 120%;
-    bottom: 10vh;
-    z-index: 2;
+
+@keyframes anfitrion{
+0%{
+    transform:scale(0.5) rotate(50deg);
+    translate: transform 1s;
+    margin-left: -12vw;
 }
+   20%{
+    transform:scale(0.5);
+    translate: transform 0.5s;
+    margin-left: -20vw;
+}
+    50%{
+    transform:scale(0.7) rotate(20deg) ;
+    translate: transform 1s;
+    opacity: 1;
+    margin-left: -11vw;
+}
+65%{
+    margin-left: -25vw;
+    translate: margin-left 1s;
+    background-color: #ffffff00;
+}
+    75%{
+    transform:scale(0.8) rotate(10deg);
+    translate: transform 2s;
+    margin-left: -12vw;
+    background-color: #ffffff00;
+}
+    100%{
+    transform:scale(1);
+    translate: transform 1s;
+    margin-top: 40vh;
+    margin-left: 11vw;
+    background-color: #ffffff00;
+}
+
+}
+
+
 .btnInicio{ 
     position: absolute;
-    width: 14vw;
-    height: 28vh;
-    top: 56vh;
-    left: 43.7vw;
+    width: 12vw;
+    height: 26vh;
+    top: 52vh;
+    left: 49.2vw;
     background: url("images/btn12.png");
     background-size:100% 100% ;
     background-repeat: no-repeat;
@@ -110,28 +130,40 @@ body{
     }
 header{
     width: 100vw;
-    background: #177ECA;
+    background:linear-gradient(0.15turn, #4faaffd3, #ebf8e1, #4faaffd3);
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
 } 
-    @media (min-width: 630px) {
-      header {
-          background: url("images/061.png") top right no-repeat, url("images/quagsire.png") top left no-repeat;
-          background-size: 17% 81%;
-          background-color:rgba(8, 107, 255, 0.521);
-         
-
-    }
-    }
-    @media (min-width: 1200px) {
+    /* @media (min-width: 1200px) {
       header {
           background: url("images/061.png") center right no-repeat, url("images/quagsire.png") center left no-repeat;
           background-size: 17.2% 60%;
           background-color: rgba(158, 165, 196, 0.645);
           margin-left: -20px;
         
-    }
-    }
+    } */
+.anfitrion2{
+    height: 30vh;
+    display: flex;
+    position: absolute;
+    left: 2.5vw;
+    top:20vh;
+    z-index: 2;
+}   
+
+.anfitrion3{
+    height: 30vh;
+    display: flex;
+    position: absolute;
+    right: 1vw;
+    top:22vh;
+    z-index: 2;
+}   
 .banner{
+    display: flex;
     width: 71.1vw;
     height: 50vh;
     min-height: 10vh;
@@ -146,6 +178,7 @@ header{
     object-fit: cover;
     border-left: rgb(254, 255, 247) solid 17px;
     border-right: rgb(254, 255, 247) solid 17px;
+    z-index: 3;
 }
     @keyframes banner{
       0% ,30%
@@ -201,21 +234,16 @@ header label:hover{
     margin: 0;
     display: flex;
     background: #003f82;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     justify-content: flex-end;
 }
-.container li{
-    border: 3px solid rgb(255, 255, 255);
-}
-#home{
-    border-left: 6px solid rgb(255, 255, 255);
-}
+
 .container li:hover{
     background: rgba(0,0,0,0.3);
 }
 .container li a{
     display: block;
-    padding: 3vh 4vw;
+    padding: 4vh 4vw;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -236,9 +264,9 @@ header label:hover{
 .container ul{
       flex-direction: column;
 }
-.container li{
+/* .container li{
       border-top: 1px solid #ffff;
-}
+} */
 .container li:hover{
     background: rgba(0,0,0,0.3);
 }
@@ -252,6 +280,7 @@ header label:hover{
     width: 100vw;
     height: 138vh;
     background: url("images/purple.png");
+    /* background-color: #f1f1f1; */
     background-repeat: no-repeat;
     padding: 0;
     background-size: 100% 100%;
@@ -262,14 +291,15 @@ header label:hover{
 .item1{
     position: absolute;
     width: 21vw;
-    height: 32vh;
+    height: 46vh;
     background-color: #3e004d98;
     left: 13vw;
     top: 68vh;
     padding: 3vh 0;
     align-items: flex-start;
     text-align: center;
-    border-radius: 20px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transform: rotate(-90deg);
     
 }
 .linkH{
@@ -280,60 +310,80 @@ header label:hover{
     background: #3e004d;
 }
 .imgInicio{
-    width: 21vw;
-    margin-top: 1vh;
-    height: 30vh;
+    width: 15vw;
+    margin-top: 4.7vh;
+    height: 26vh;
+    transform: rotate(90deg);
 }
 .item2{
     position: absolute;
     width: 21vw;
-    height: 32vh;
+    height: 46vh;
     background-color: #3e004d98;
     right: 15vw;
     top:  68vh;
     align-items: flex-start;
     text-align: center;
     padding: 3vh 1vw;
-    border-radius: 20px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transform: rotate(-90deg);
 }
 .item2:hover{
     background: #3e004d;
 }
 .imgInicio2{
     width: 17vw;
-    height: 27vh;
-    margin-top: 3vh;
-    border-radius: 10px;
+    height: 17vh;
+    transform: rotate(90deg);
+    margin-top: 11vh;
+    clip-path: circle(50% at 50% 50%);
 }
 .item3{
     position: absolute;
     width: 21vw;
-    height: 32vh;
+    height: 46vh;
     background-color: #3e004d98;
     left: 13vw;
-    top: 144vh;
+    top: 141vh;
     align-items: flex-end;
     text-align: center;
     padding: 3vh 1vw;
-    border-radius: 20px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transform: rotate(-90deg);
+
 }
 .item3:hover{
     background: #3e004d;
 }
+.imgInicio3{
+    width: 17vw;
+    height: 17vh;
+    transform: rotate(90deg);
+    margin-top: 11vh;
+    border-radius: 10px;
+}
 .item4{
     position: absolute;
     width: 21vw;
-    height: 32vh;
+    height: 46vh;
     background-color: #3e004d98;
     right: 15vw;
-    top: 143vh;
+    top: 141vh;
     padding: 3vh 1vw;
     align-items: flex-end;
     text-align: center;
-    border-radius: 20px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transform: rotate(-90deg);
 }
 .item4:hover{
     background: #3e004d;
+}
+.imgInicio4{
+    width: 17vw;
+    height: 17vh;
+    transform: rotate(90deg);
+    margin-top: 11vh;
+    border-radius: 10px;
 }
 .gif{
     position: absolute;
@@ -342,13 +392,14 @@ header label:hover{
     right: 37vw;
     top: 89vh;
     align-items: center;
+    backdrop-filter: blur(10px);
 }
 .footer1{
     position: absolute;
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
     background: #3e004d98 ;
-    top:190vh;
+    top:193vh;
 }
 @media (max-width:500px){
     .contentHome{
@@ -407,34 +458,45 @@ header label:hover{
     padding: 0;
     font-weight: bold;
     margin: 0;
-    background: url("images/pokedex1.png");
+    background: #fff6f6ee;
+    /* background: url("images/pokedex1.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 220% 140%;
+    background-size: 220% 140%; */
     }
 .pokedex{
-    width: 100vw;
+    width: 70vw;
     height: 14vh;
     display: inline-block;
     margin-left:0vw;
     position: absolute;
     margin-top:0;
-    background-color: #CB2438;
+    background-color: #646464;
     color: #ffffff;
     /* -webkit-text-stroke: 2px rgb(190, 0, 0); */
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 0;
     position: absolute;
     font-weight: 800;
+    clip-path: polygon(0 0%, 81% 0%, 85% 50%, 80% 88%, 0 89%);
+}
+.title_pokedex{
+    /* backdrop-filter: blur(10px); */
+    position: absolute;
+    margin-top:1vh;
+    padding-top: 1vh;
+    height: 14vh;
+    width: 70vw;
+
 }
 .btn-flotante {
 	font-size: 0.8em; 
 	text-transform: uppercase;
 	font-weight: bold; 
-	color: #ffffff;
+	color: #727272;
 	border-radius: 5px; 
-	background-color: rgba(190, 0, 0, 0.966);
+    border: 1px solid#727272;
 	padding: 40px 25px; 
 	position: fixed;
 	bottom: 5vh;
@@ -443,11 +505,13 @@ header label:hover{
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	z-index: 99;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .btn-flotante:hover {
-	background-color: #2c2fa5; 
+	background-color: #646464;
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
+    color: #FFFFFF;
 }
 .pikachu{
     position:absolute;
@@ -476,7 +540,7 @@ header label:hover{
     left: 30vw;
     width: 30vw;
     color: rgba(255, 255, 255, 0.966) ;
-    background: #CB2438;
+    background: #646464;
     border-radius: 30px;
     padding-left: 2vw;
     padding-top: 2vh;
@@ -511,17 +575,18 @@ header label:hover{
     margin-top: 20vh;
 }
 .cards{
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     text-align: center;
     margin: 0;
     border-radius: 10px;
     transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }   
 .namePoke{
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background: #CB2438;
+    background: #727272;
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -536,7 +601,7 @@ header label:hover{
     width:5vw ;
     margin-left: 4.5vw;
     color: rgb(255, 255, 255);
-    background: #CB2438;
+    background: #727272;
     padding: 0.7vh 0.7vw;
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
@@ -552,9 +617,9 @@ header label:hover{
     padding-top: 1vh;
     margin-left: 1.5vw;
     align-items: stretch;
-    background: #ffd4d4c2; 
+    background: #d4d4d4c2; 
     border-radius: 5px;
-    color: #520101;
+    color: #313131;
 }
 .typesPoke{
     text-transform: capitalize;
@@ -571,7 +636,7 @@ header label:hover{
     display: flex;
     width: 14vw;
     height: 27.9vh;
-    background: #CB2438;
+    background: #646464;
     margin-left: 3vw;
     padding: 0;
     border-radius: 10px;
@@ -599,7 +664,7 @@ header label:hover{
 }
 .contenedor_ordenar a{
     text-decoration: none;
-    color: #CB2438;
+    color: #5e5e5e;
     padding: 0;
 }
 .contenedor_ordenar li{
@@ -611,7 +676,7 @@ header label:hover{
     display: flex;
     width: 14vw;
     height: 7 9vh;
-    background: #CB2438;
+    background:#646464;
     margin-left: 3vw;
     padding: 0;
     border-radius: 10px;
@@ -639,7 +704,7 @@ header label:hover{
 }
 .contenedor_filtro a{
     text-decoration: none;
-    color: #CB2438;
+    color: #555555;
     padding: 0;
 }
 .contenedor_filtro li{
@@ -652,7 +717,7 @@ header label:hover{
     position: absolute;
     margin-left: 3vw;
     color:rgb(190, 0, 0);
-    -webkit-text-stroke: 2px rgb(190, 0, 0);
+    -webkit-text-stroke: 2px #727272;
     font-size: 1.65em;
     width: 50vw;
     margin-top: -10vh;
@@ -1975,10 +2040,11 @@ header label:hover{
     padding: 0;
     font-weight: bold;
     margin: 0;
-    background: url("images/batalla1.png");
+    background-color: #f5f5f5;
+    /* background: url("images/batalla1.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 220% 140%;
+    background-size: 220% 140%; */
 }
 .equipo{
     width: 100vw;
@@ -2023,9 +2089,9 @@ header label:hover{
 	font-size: 0.8em; 
 	text-transform: uppercase;
 	font-weight: bold; 
-	color: #ffffff;
+	color: rgba(190, 123, 0, 0.938);
 	border-radius: 5px; 
-	background-color: rgba(190, 123, 0, 0.938);
+	border: rgba(190, 123, 0, 0.938) 1px solid;
 	padding: 40px 25px; 
 	position: fixed;
 	bottom: 5vh;
@@ -2036,7 +2102,8 @@ header label:hover{
     text-decoration: none;
 }
 .btn-flotante2:hover {
-	background-color: #2c2fa5; 
+	background-color: rgba(190, 123, 0, 0.938);
+    color: #ffffff;
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
 }
@@ -2063,7 +2130,7 @@ header label:hover{
     height: 4120vh;
     width: 90vw;
     column-gap: 2vw;
-    row-gap: 1vh;
+    row-gap: 2.5vh;
     grid-template-columns: repeat(3,28vw);
     grid-template-rows: repeat(150, 48vh);
     color: black;
@@ -2080,6 +2147,7 @@ header label:hover{
     text-align: center;
     flex-direction: column;
     height: 48vh;
+    box-shadow: rgb(190, 108, 0) 0px 0px 0px 1px, rgb(190, 108, 0) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }   
 .namePokeBatalla{
     width:12vw ;
@@ -2103,10 +2171,10 @@ header label:hover{
     /* background-color: brown; */
 }
 .numPokeBatalla{
-    color: rgb(255, 255, 255);
+    color:  #ffa93a;
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background: #ffa93a;
+    background:#FFEB99;
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -2115,6 +2183,7 @@ header label:hover{
     position: absolute;
     height: 7vh;
     width: 28vw;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
 }
 .informationBatalla{
     display: flex;
@@ -2189,10 +2258,11 @@ header label:hover{
     padding: 0;
     font-weight: bold;
     margin: 0;
-    background: url("images/Evolucion.png");
+    /* background: url("images/Evolucion.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 220% 140%;
+    background-size: 220% 140%; */
+    background: linear-gradient(0.25turn, #084aff48, #f1f1f1);
 }
 .equipoEvo{
 
@@ -2215,9 +2285,9 @@ header label:hover{
 	font-size: 0.8em; 
 	text-transform: uppercase;
 	font-weight: bold; 
-	color: #ffffff;
+	color: rgba(0, 104, 190, 0.959);
 	border-radius: 5px; 
-	background-color: rgba(0, 104, 190, 0.959);
+	border: rgba(0, 104, 190, 0.959) 1px solid;
 	padding: 40px 25px; 
 	position: fixed;
 	bottom: 5vh;
@@ -2228,7 +2298,8 @@ header label:hover{
     text-decoration: none;
 }
 .btn-flotante3:hover {
-	background-color: #00ddcb; 
+	background-color: rgba(0, 104, 190, 0.959);
+    color: #ffffff;
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
 }
