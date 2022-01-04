@@ -130,12 +130,12 @@ body{
     }
 header{
     width: 100vw;
-    background:linear-gradient(0.15turn, #4faaffd3, #ebf8e1, #4faaffd3);
+    /* background:linear-gradient(0.15turn, #003f82, #ebf8e1, #4faaffd3); */
+    background-color: #002f61;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    z-index: 1;
 } 
     /* @media (min-width: 1200px) {
       header {
@@ -236,6 +236,7 @@ header label:hover{
     background: #003f82;
     /* border: 3px solid white; */
     justify-content: flex-end;
+    z-index: 50;
 }
 
 .container li:hover{
@@ -275,6 +276,16 @@ header label:hover{
     
     }
     }
+
+
+#home_icon{
+    height: 5vh;
+    padding: 0;
+    margin-top: -1vh;
+    display: flex;
+    margin-left: -1vw;
+    position: absolute;
+}    
 .contentHome{
     display: flex;
     width: 100vw;
@@ -360,7 +371,7 @@ header label:hover{
     height: 17vh;
     transform: rotate(90deg);
     margin-top: 11vh;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .item4{
     position: absolute;
@@ -374,6 +385,7 @@ header label:hover{
     text-align: center;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     transform: rotate(-90deg);
+
 }
 .item4:hover{
     background: #3e004d;
@@ -383,7 +395,7 @@ header label:hover{
     height: 17vh;
     transform: rotate(90deg);
     margin-top: 11vh;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .gif{
     position: absolute;
@@ -2046,7 +2058,25 @@ header label:hover{
     background-repeat: no-repeat;
     background-size: 220% 140%; */
 }
-.equipo{
+.equipo_batalla{
+    z-index: 1;
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0;
+    top:0;
+    color: #ffffff;
+    text-align: center;
+    background-color: aqua;
+    flex-direction: column;
+}
+.title_battle{
+    font-size: 2em;
+}
+/* .equipo{
     width: 100vw;
     height: 12vh;
     display: inline-block;
@@ -2059,31 +2089,44 @@ header label:hover{
     text-align: center;
     padding-top: 3vh;
     position: absolute;
-    font-weight: 800;
-}
+} */
 .fnd-1{
-    width: 100vw;
-    background-color: rgb(190, 108, 0);
+    justify-content: center;
+    display: block;
+    width: 50vw;
+    z-index: 2;
+    background-color: rgba(196, 127, 0, 0.397);
+    backdrop-filter: blur(10px);
 }
 .equipo2{
     display: inline-block;
-    margin-left: 26vw;
+    margin-left: 0vw;
     color:rgb(248, 248, 248);
     font-size: 1.3em;
-    padding: 0;
-    margin-top: 18vh;
-    margin-bottom: 1vh;
+    padding-bottom:2vh;
     z-index: 2;
+    
 }
 .equipo3{
     display: inline-block;
-    margin-left: 34vw;
+    margin-left: -6vw;
     color:rgb(248, 248, 248);
     font-size: 1.3em;
     padding: 0 0 3vh 0;
     margin-top: 3vh;
     margin-bottom: 1vh;
     z-index: 2;
+}
+.img_battle{
+    position: absolute;
+    top: 0;
+    height: 55vh;
+    width: 100vw;
+    display: flex;
+    z-index: 2;
+    background-size:50% 100%;
+    /* filter: blur(2.5px); */
+    
 }
 .btn-flotante2 {
 	font-size: 0.8em; 
@@ -2131,15 +2174,16 @@ header label:hover{
     width: 90vw;
     column-gap: 2vw;
     row-gap: 2.5vh;
-    grid-template-columns: repeat(3,28vw);
+    grid-template-columns: repeat(3,26vw);
     grid-template-rows: repeat(150, 48vh);
     color: black;
-    margin:4vh 0 0 6vw;
+    margin:60vh 0 0 8.5vw;
     padding: 0; 
     /* background-color: #3e004d; */
 }
 .cardsBatalla{
-    background: #ffe880c5;
+    /* background: #ffe88086; */
+    background-color: #ffffff;
     margin: 0;
     border-radius: 10px;
     transition: all 0.5s;
@@ -2171,10 +2215,11 @@ header label:hover{
     /* background-color: brown; */
 }
 .numPokeBatalla{
-    color:  #ffa93a;
+    /* color:  #ffa93a; */
+    color:  #bd6b00;
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background:#FFEB99;
+    /* background:#FFEB99; */
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -2182,12 +2227,12 @@ header label:hover{
     font-size: 1.3em;
     position: absolute;
     height: 7vh;
-    width: 28vw;
+    width: 26vw;
     /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
 }
 .informationBatalla{
     display: flex;
-    width: 15vw;
+    width: 13vw;
     height:40vh;
     position: absolute;
     font-size: 14px;
@@ -2197,17 +2242,19 @@ header label:hover{
     margin-left: 13vw;
     margin-top: 8vh;
     align-items: stretch;
-    background: #fffcf7; 
+    /* background: #fffcf7;  */
+    background: #ffe88086;
     border-radius: 7px;
     color: #520101;
 }
 .typesPokeBatalla{
     text-transform: capitalize;
-    margin:  0 0 0 2vw;
+    margin:  0 0 0 1vw;
     padding-top: 1vh;
     padding-left: 2vw;
     padding-right: 1vw;
-    background: #ffa93a;
+    /* background: #ffa93a; */
+    background: #bd6b00;
     border-top-left-radius: 10px;
     border-top-right-radius:10px;
     border-bottom-left-radius: 10px; 
@@ -2216,10 +2263,10 @@ header label:hover{
 }
 .typesPoke2Batalla{
     text-transform: capitalize;
-    margin: 0 0 1vh 4.4vw;
+    margin: 0 0 1vh 3.4vw;
     padding-left: 3vw;
     padding-bottom: 1vh;
-    background: #ffa93a;
+    background: #bd6b00;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px; 
     font-size: 1.1em;
@@ -2262,24 +2309,21 @@ header label:hover{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 220% 140%; */
-    background: linear-gradient(0.25turn, #084aff48, #f1f1f1);
+    background-color: #fffefe;
+    /* background: linear-gradient(0.25turn, #084aff48, #f1f1f1); */
 }
 .equipoEvo{
-
+    z-index: 1;
     width: 100vw;
-    height: 12vh;
-    display: inline-block;
-    margin-left:0vw;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     margin-top:0;
-    background-color:rgb(0, 17, 114);
     color: #ffffff;
-    /* -webkit-text-stroke: 2px rgb(190, 0, 0); */
     font-size: 2em;
     text-align: center;
-    padding-top: 3vh;
-    position: absolute;
-    font-weight: 800;
 }
 .btn-flotante3 {
 	font-size: 0.8em; 
@@ -2333,20 +2377,35 @@ header label:hover{
     margin:2vh 0 0 4vw;
     padding: 0; 
     margin-left: 20vw; 
-    margin-top: 4vh;
+    margin-top: 60vh;
 }
 .form_evo{
-    background-color:rgb(0, 17, 114);
+    z-index: 3;
+    background-color: #04003da1;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+.img_evolution{
+    position: absolute;
+    top: 0;
+    height: 55vh;
+    width: 100vw;
+    display: flex;
+    z-index: 2;
+    /* filter: blur(2.5px); */
+}
+.title_evo{
+    font-size: 1em;
 }
 .regionPoke{
     display: inline-block;
-    margin-left: 29vw;
-    font-size: 1.3em;
-    padding: 0;
-    margin-top: 13vh;
-    margin-bottom: 2vh; 
+    /* margin-left: 29vw; */
+    font-size: 0.8em;
+    /* margin-top: 13vh;
+    margin-bottom: 2vh;  */
     color: #ffffff;
-    padding-bottom: 3vh;
+    padding: 0 0 6vh 2vw;
+
 }
 .cardsEvolucion{
     background: #016ae2;
@@ -2431,7 +2490,7 @@ header label:hover{
 }
 .btn-busqueda-batalla{
     border-radius: 5px;
-    border-color: rgb(177, 127, 3);
+    /* border-color: rgb(177, 127, 3); */
 }
 .btn-busqueda-evo{
     border-radius: 5px;
@@ -2444,6 +2503,7 @@ header label:hover{
     height: 4vh;
     width: 6vw;
     border-radius: 5px;
+    margin-right: 2vw;
 }
 .btn-busqueda{
     border: rgb(146, 88, 1) 2px solid;

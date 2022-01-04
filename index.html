@@ -32,7 +32,7 @@
       </header>
             <nav class="container" style="display: none;" >
               <ul>
-                <li id="home"><a href="#contentHome">Inicio</a></li>
+                <li id="home"><a href="#contentHome"><img id="home_icon" src="images/casa.png" alt=""></a></li> 
                 <li id="pokedex"><a href="#contentPokedex">Pokedex</a></li>
                 <li id ="batalla"><a href="#contentBatalla">Batalla</a></li>
                 <li id ="evolucion"><a href="#contentEvolucion">Evolucion</a></li>
@@ -212,9 +212,10 @@
 
 
             <section class="contentBatalla" id="contentBatalla" style= "display:none;">
-           
-                    <h2 class="equipo"> Selecciona tu Equipo </h2>
+                  <div class="equipo_batalla">
+                    <img class="img_battle" src="images/bate.jpeg" alt="">
                     <form class="fnd-1">
+                      <h2 class="title_battle"> Selecciona tu Equipo </h2>
                         <label for="" class="equipo2" >Busca por Nombre: <input type="text" id="texto" class="btn-busqueda-batalla" pattern="[A-Za-z]{3,10}" title="Nombre pokemon" autocomplete="on"></label>
                         <button type="button" class="btn-battle" id="buscar">Buscar</button>
                         <input type="reset" class="btn-busqueda" value="Reset">
@@ -224,7 +225,8 @@
                       <label for="" class="equipo3" > Numero: <input type="number"  class="btn-busqueda-batalla" id="number" step="000" min="000" max="251"> </label>
                       <button type="button" class="btn-battle" id="buscar_num" >Buscar</button>
                     </form>
-
+                  </div>
+                  
                     <a href="#contentBatalla" class="btn-flotante2" style= "display:none;">Return up<img class="pikachu" src="images/pikaflotante.png"></a>
 
                       <div id="pokemon-batalla" class="pokemon-batalla" >
@@ -240,11 +242,13 @@
 
            <section class="contentEvolucion" id="contentEvolucion" style= "display:none;">
 
-              <h2 class="equipoEvo"> Poke - Evoluciones </h2>
-
-              <a href="#contentEvolucion" class="btn-flotante3" style= "display:none;"><img class="pikachu" src="images/pikaflotante.png">Return Up</a>
+          <div class="equipoEvo">  
+              
+              <img class="img_evolution" src="images/image_pok.jpeg">
+            
 
           <form class="form_evo"> 
+            <h2 class="title_evo"> Poke - Evoluciones </h2>
             <label for="" class="regionPoke">Pokemon por region: <input type="text" class="btn-busqueda-evo" name="regiones" id="region" list="listaRegiones"> </label>
 
                             <datalist id="listaRegiones">
@@ -260,6 +264,9 @@
 
           </form>
 
+
+      </div>   
+          <a href="#contentEvolucion" class="btn-flotante3" style= "display:none;"><img class="pikachu" src="images/pikaflotante.png">Return Up</a>
 
                <div id="pokemon-evolucion" class="pokemon-evolucion" >
 
