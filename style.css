@@ -131,7 +131,7 @@ body{
 header{
     width: 100vw;
     /* background:linear-gradient(0.15turn, #003f82, #ebf8e1, #4faaffd3); */
-    background-color: #002f61;
+    background-color: #002f61cb;
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -289,8 +289,9 @@ header label:hover{
 .contentHome{
     display: flex;
     width: 100vw;
-    height: 138vh;
-    background: url("images/purple.png");
+    height: 140vh;
+    /* background: radial-gradient(#3e004d88,#f2f3ff); */
+    background: radial-gradient(circle at 100%, rgb(241, 241, 241), rgb(235, 235, 235) 50%, #3e004d88 75%, #3e004d88 75%);
     /* background-color: #f1f1f1; */
     background-repeat: no-repeat;
     padding: 0;
@@ -402,7 +403,7 @@ header label:hover{
     width: 27vw;
     height: 59vh;
     right: 37vw;
-    top: 89vh;
+    top: 93vh;
     align-items: center;
     backdrop-filter: blur(10px);
 }
@@ -410,7 +411,7 @@ header label:hover{
     position: absolute;
     width: 100vw;
     height: 7vh;
-    background: #3e004d98 ;
+    /* background: #3e004d98 ; */
     top:193vh;
 }
 @media (max-width:500px){
@@ -470,15 +471,15 @@ header label:hover{
     padding: 0;
     font-weight: bold;
     margin: 0;
-    background: #fff6f6ee;
+    background: #fcfcfcee;
     /* background: url("images/pokedex1.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 220% 140%; */
     }
 .pokedex{
-    width: 70vw;
-    height: 14vh;
+    width: 93vw;
+    height: 30vh;
     display: inline-block;
     margin-left:0vw;
     position: absolute;
@@ -492,15 +493,38 @@ header label:hover{
     position: absolute;
     font-weight: 800;
     clip-path: polygon(0 0%, 81% 0%, 85% 50%, 80% 88%, 0 89%);
+    z-index: 1;
+    justify-content: center;
+}
+.pokedex::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.171);
+    z-index:24;
+    /* backdrop-filter: blur(2px); */
+}
+.img_pokedex{
+    margin-top: -6vh;
+    width: 95vw;
+    height: 70vh;
+    z-index: 2;
+    position: absolute;
+    left: -2vw;
 }
 .title_pokedex{
     /* backdrop-filter: blur(10px); */
     position: absolute;
-    margin-top:1vh;
+    margin-top:8vh;
     padding-top: 1vh;
+    left: 30vw;
     height: 14vh;
-    width: 70vw;
-
+    width: 10vw;
+    z-index: 25;
+    backdrop-filter: blur(2px);
 }
 .btn-flotante {
 	font-size: 0.8em; 
@@ -539,25 +563,39 @@ header label:hover{
 		right: 20px;
 	}
 }
+.interfaz_two_pokedex{
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    position: absolute;
+    left: 20vw;
+    top:31vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .objeto_2 {
-	position:absolute;
-    top: 10vw;
-    right: 0.8vw;
-    left: 55vw;
+    position: absolute;
+	height: 65vh;
+    display: flex;
+    right: 10vw;
+    top:2vh;
 }
 .objeto_3 {
-	position:absolute;
-    top: 10vw;
-    right: 0.8vw;
-    left: 30vw;
+    height: 35vh;
+    left: 9vw;
     width: 30vw;
     color: rgba(255, 255, 255, 0.966) ;
-    background: #646464;
-    border-radius: 30px;
-    padding-left: 2vw;
-    padding-top: 2vh;
-    padding-right: 2vw;
-    padding-bottom: 2vh;
+    background: #5EAC4F;
+    /* border-radius: 30px; */
+    padding: 3vh 2vw;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 80% 91%, 50% 75%, 0% 75%);
+    border-radius: 15px;
 }
 .pokemon-container{
     display: grid;
@@ -568,10 +606,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-
     padding: 0; 
     margin-left: 20vw; 
-    margin-top: 20vh;
+    margin-top: 35vh;
 }
 .pokemon-container-descendentes{
     display: grid;
@@ -584,7 +621,7 @@ header label:hover{
     color: black;
     padding: 0; 
     margin-left: 20vw; 
-    margin-top: 20vh;
+    margin-top: 35vh;
 }
 .cards{
     /* background: #f2f2f2; */
@@ -593,12 +630,13 @@ header label:hover{
     border-radius: 10px;
     transition: all 0.5s;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: radial-gradient(#53a34186, #ffffff);
 }   
 .namePoke{
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background: #727272;
+    background: #868686;
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -613,7 +651,7 @@ header label:hover{
     width:5vw ;
     margin-left: 4.5vw;
     color: rgb(255, 255, 255);
-    background: #727272;
+    background: #868686;
     padding: 0.7vh 0.7vw;
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
@@ -629,7 +667,8 @@ header label:hover{
     padding-top: 1vh;
     margin-left: 1.5vw;
     align-items: stretch;
-    background: #d4d4d4c2; 
+    background: #ffffff69;
+    backdrop-filter: blur(10px); 
     border-radius: 5px;
     color: #313131;
 }
@@ -648,12 +687,13 @@ header label:hover{
     display: flex;
     width: 14vw;
     height: 27.9vh;
-    background: #646464;
+    background: #e0e0e0;
     margin-left: 3vw;
     padding: 0;
     border-radius: 10px;
-    top: 20vh;
+    top: 30vh;
     position: absolute;
+    color: #646464;
 }
 .contenedor_ordenar h4{
     position: relative;
@@ -663,8 +703,9 @@ header label:hover{
     width: 15vw;
     height: 5vh;
     padding: 0;
-    color: white;
+
 }
+/* }
 .contenedor_ordenar form{
     position: relative;
     background: #EBEBEB;
@@ -678,7 +719,7 @@ header label:hover{
     text-decoration: none;
     color: #5e5e5e;
     padding: 0;
-}
+} */
 .contenedor_ordenar li{
     list-style: none;
     padding: 0;
@@ -688,24 +729,24 @@ header label:hover{
     display: flex;
     width: 14vw;
     height: 7 9vh;
-    background:#646464;
+    background: #e0e0e0;
     margin-left: 3vw;
     padding: 0;
     border-radius: 10px;
-    margin-top: 50vh;
+    margin-top: 60vh;
     position: absolute;
+    color: #646464;
 }
 .contenedor_filtro h4{
-    position: relative;
+    position: absolute;
     text-align: left;
     width: 15vw;
     height: 1vh;
     padding: 0;
-    color: white;
     margin-left: 1vw;
     top: 1vh;
 }
-.contenedor_filtro form{
+/* .contenedor_filtro form{
     position: relative;
     background: #EBEBEB;
     padding: 0;
@@ -713,7 +754,7 @@ header label:hover{
     width: 13vw;
     border-radius: 5px;
     margin-right: 2vw;
-}
+} */
 .contenedor_filtro a{
     text-decoration: none;
     color: #555555;
@@ -739,7 +780,7 @@ header label:hover{
     display: flex;
     position: absolute;
     margin-left: 0;
-    background-color:#525252;
+    background-color:#525252d7;
     font-size: 1.4em;
     width: 70vw;
     color: #fcfcfc;
@@ -752,7 +793,7 @@ header label:hover{
     display: flex;
     position: absolute;
     margin-left: 0;
-    background-color:#051c9c;
+    background-color:#0202c0cb;
     font-size: 1.4em;
     width: 70vw;
     color: #fcfcfc;
@@ -765,7 +806,7 @@ header label:hover{
     display: flex;
     position: absolute;
     margin-left: 0;
-    background-color:#c2a70b;
+    background-color:#c4a000c9;
     font-size: 1.4em;
     width: 70vw;
     color: #fcfcfc;
@@ -778,7 +819,7 @@ header label:hover{
     display: flex;
     position: absolute;
     margin-left: 0;
-    background-color:#bb008c;
+    background-color:#ce0279dc;
     font-size: 1.4em;
     width: 70vw;
     color: #fcfcfc;
@@ -791,7 +832,7 @@ header label:hover{
     display: flex;
     position: absolute;
     margin-left: 0;
-    background-color:#fdf61c;
+    background-color:#dbd800cc;
     font-size: 1.4em;
     width: 70vw;
     color: #fcfcfc;
@@ -969,23 +1010,25 @@ header label:hover{
     border-radius: 5px;
     padding: 1vh 0 1vh 3vw;
 }
+
 .allTypes{
-    display: grid;
-    height: 8vh;
-    width: 70vw;
+    justify-content: center;
+    position: absolute;
+    height: 3380vh;
+    width: 79vw;
     column-gap: 1.4vw;
     row-gap: 14vh;
     grid-template-columns: repeat(1,80vw);
-    grid-template-rows: repeat(200, 47.4vh);
-    color: black;
-    margin:4vh 0 0 4vw;
+    grid-template-rows: repeat(200, 50.4vh);
     padding: 0; 
-    margin-left: 10vw;
-    justify-content: stretch; 
-    align-items: stretch;
-    margin-top: 22vh;
+    margin-left: 20vw;
+    /* justify-content: stretch; 
+    align-items: stretch; */
+    margin-top: 35vh;
+    
 }
 .pokemon-container-typeSteel{
+
     display: grid;
     height: 8vh;
     width: 70vw;
@@ -994,10 +1037,10 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(1, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:5vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
-    margin-top: 5vh;
+    /* margin-left: 12vw;  */
+    /* margin-top: 5vh; */
     flex-wrap: wrap;
     justify-content: stretch; 
     align-items: stretch;
@@ -1046,20 +1089,21 @@ header label:hover{
 }
 .pokemon-container-typeWater{
     display: grid;
-    height: 8vh;
+    height: 280vh;
     width: 70vw;
     column-gap: 1.4vw;
     row-gap: 2vh;
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 5vh;
     flex-wrap: wrap;
     justify-content: stretch; 
     align-items: stretch;
+    
 }
 .cardsWater{
     background: #f2f2f2;
@@ -1072,7 +1116,7 @@ header label:hover{
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background: #0202c0;
+    background: #0202c0cb;
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -1083,7 +1127,7 @@ header label:hover{
     width:5vw ;
     margin-left: 4.5vw;
     color: rgb(255, 255, 255);
-    background: #0202c0;
+    background: #0202c0cb;
     padding: 0.7vh 0.7vw;
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
@@ -1105,20 +1149,20 @@ header label:hover{
 }
 .pokemon-container-typeBug{
     display: grid;
-    height: 8vh;
+    position: static;
+    height: 80vh;
     width: 70vw;
     column-gap: 1.4vw;
     row-gap: 2vh;
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:5vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 448vh;
     flex-wrap: wrap;
-    justify-content: stretch; 
-    align-items: stretch;
+
 }
 .cardsBug{
     background: #f2f2f2;
@@ -1131,7 +1175,7 @@ header label:hover{
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background: #cea902;
+    background: #c4a000c9;
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -1142,7 +1186,7 @@ header label:hover{
     width:5vw ;
     margin-left: 4.5vw;
     color: rgb(255, 255, 255);
-    background: #cea902;
+    background: #c4a000c9;
     padding: 0.7vh 0.7vw;
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
@@ -1171,9 +1215,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 646vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1190,7 +1234,7 @@ header label:hover{
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background: #ce0279;
+    background: #ce0279dc;
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -1201,7 +1245,7 @@ header label:hover{
     width:5vw ;
     margin-left: 4.5vw;
     color: rgb(255, 255, 255);
-    background: #ce0279;
+    background: #ce0279dc;
     padding: 0.7vh 0.7vw;
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
@@ -1230,9 +1274,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 646vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1249,7 +1293,7 @@ header label:hover{
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     margin:0 0 1vh 0;
-    background: #f8f403;
+    background: #dbd800cc;
     padding-top: 1.8vh;
     padding-bottom: 1.8vh;
     border-top-left-radius: 10px;
@@ -1260,7 +1304,7 @@ header label:hover{
     width:5vw ;
     margin-left: 4.5vw;
     color: rgb(255, 255, 255);
-    background: #f8f403;
+    background: #dbd800cc;
     padding: 0.7vh 0.7vw;
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
@@ -1289,9 +1333,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 745vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1347,9 +1391,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 745vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1405,9 +1449,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 893vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1463,9 +1507,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 893vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1521,12 +1565,14 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 943vh;
     justify-content: stretch; 
     align-items: stretch;
+    /* position: absolute;
+    margin-top:10vh; */
 }
 .cardsFighting{
     background: #f2f2f2;
@@ -1579,9 +1625,9 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
+    /* margin-left: 12vw;  */
     margin-top: 993vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1637,9 +1683,8 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
     margin-top: 1340vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1695,9 +1740,8 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
     margin-top: 1537vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1753,9 +1797,8 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
     margin-top: 1635vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1811,9 +1854,8 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
-    padding: 0; 
-    margin-left: 12vw; 
+    margin:2vh 0 0 2vw;
+    padding: 0;  
     margin-top: 1733vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1869,9 +1911,8 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
     margin-top: 1733vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1927,9 +1968,8 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
+    margin:2vh 0 0 2vw;
     padding: 0; 
-    margin-left: 12vw; 
     margin-top: 1831vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -1985,9 +2025,8 @@ header label:hover{
     grid-template-columns: repeat(5,14vw);
     grid-template-rows: repeat(51, 47.4vh);
     color: black;
-    margin:2vh 0 0 4vw;
-    padding: 0; 
-    margin-left: 12vw; 
+    margin:2vh 0 0 2vw;
+    padding: 0;  
     margin-top: 1930vh;
     justify-content: stretch; 
     align-items: stretch;
@@ -2040,7 +2079,7 @@ header label:hover{
     width: 100vw;
     height: 10vh;
     margin-top: 3200vh;
-    background: #df141498 ;
+    /* background: #df141498 ; */
     top:190vh;
     z-index: 9;
 }
@@ -2048,7 +2087,7 @@ header label:hover{
     display: flex;
     position: absolute;
     width: 100vw;
-    height: 4170vh;
+    height: 4310vh;
     padding: 0;
     font-weight: bold;
     margin: 0;
@@ -2095,9 +2134,10 @@ header label:hover{
     display: block;
     width: 50vw;
     z-index: 2;
-    background-color: rgba(196, 127, 0, 0.397);
-    backdrop-filter: blur(10px);
+    background-color: rgba(17, 2, 99, 0.219);
+    backdrop-filter: blur(8px);
 }
+
 .equipo2{
     display: inline-block;
     margin-left: 0vw;
@@ -2128,13 +2168,32 @@ header label:hover{
     /* filter: blur(2.5px); */
     
 }
+.img_shadow{
+    position: absolute;
+    top: 0;
+    height: 55vh;
+    width: 100vw;
+    z-index: 2; 
+}
+
+.img_shadow::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.171);
+    z-index:24;
+}
+
 .btn-flotante2 {
 	font-size: 0.8em; 
 	text-transform: uppercase;
 	font-weight: bold; 
-	color: rgba(190, 123, 0, 0.938);
+	color: rgb(218, 106, 2);
 	border-radius: 5px; 
-	border: rgba(190, 123, 0, 0.938) 1px solid;
+	border: #cc7138 1px solid;
 	padding: 40px 25px; 
 	position: fixed;
 	bottom: 5vh;
@@ -2145,7 +2204,7 @@ header label:hover{
     text-decoration: none;
 }
 .btn-flotante2:hover {
-	background-color: rgba(190, 123, 0, 0.938);
+	background-color: #cc7138;
     color: #ffffff;
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
@@ -2164,7 +2223,7 @@ header label:hover{
     width: 100vw;
     height: 10vh;
     margin-top: 3970vh;
-    background: #dfb01498 ;
+    /* background: #dfb01498 ; */
     top:190vh;
     z-index: 9;
 }
@@ -2183,7 +2242,10 @@ header label:hover{
 }
 .cardsBatalla{
     /* background: #ffe88086; */
-    background-color: #ffffff;
+    /* background-color: #ffffff;
+    background: radial-gradient(#e66465, #9198e5); */
+    background: radial-gradient(ellipse at top, #ce7a4683, transparent),
+            radial-gradient(ellipse at bottom, #9198e5c9, transparent);
     margin: 0;
     border-radius: 10px;
     transition: all 0.5s;
@@ -2191,12 +2253,12 @@ header label:hover{
     text-align: center;
     flex-direction: column;
     height: 48vh;
-    box-shadow: rgb(190, 108, 0) 0px 0px 0px 1px, rgb(190, 108, 0) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }   
 .namePokeBatalla{
     width:12vw ;
     text-align: center;
-    color: rgb(109, 71, 0);
+    color: #fffefe;
     padding: 0.4vh 0.7vw;
     text-transform: capitalize;
     font-size: 1.35em;
@@ -2216,7 +2278,7 @@ header label:hover{
 }
 .numPokeBatalla{
     /* color:  #ffa93a; */
-    color:  #bd6b00;
+    color:  #fffefe;
     text-transform: capitalize;
     margin:0 0 1vh 0;
     /* background:#FFEB99; */
@@ -2233,7 +2295,7 @@ header label:hover{
 .informationBatalla{
     display: flex;
     width: 13vw;
-    height:40vh;
+    height:38vh;
     position: absolute;
     font-size: 14px;
     flex-direction: column;
@@ -2243,7 +2305,7 @@ header label:hover{
     margin-top: 8vh;
     align-items: stretch;
     /* background: #fffcf7;  */
-    background: #ffe88086;
+    background: #ffffff65;
     border-radius: 7px;
     color: #520101;
 }
@@ -2254,7 +2316,7 @@ header label:hover{
     padding-left: 2vw;
     padding-right: 1vw;
     /* background: #ffa93a; */
-    background: #bd6b00;
+    background: #CE7A46;
     border-top-left-radius: 10px;
     border-top-right-radius:10px;
     border-bottom-left-radius: 10px; 
@@ -2266,7 +2328,7 @@ header label:hover{
     margin: 0 0 1vh 3.4vw;
     padding-left: 3vw;
     padding-bottom: 1vh;
-    background: #bd6b00;
+    background: #CE7A46;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px; 
     font-size: 1.1em;
@@ -2361,7 +2423,7 @@ header label:hover{
     width: 100vw;
     height: 10vh;
     margin-top: 4120vh;
-    background: #0d02ad98 ;
+    /* background: #0d02ad98 ; */
     top:190vh;
     z-index: 9;
 }
@@ -2381,7 +2443,7 @@ header label:hover{
 }
 .form_evo{
     z-index: 3;
-    background-color: #04003da1;
+    background-color: rgba(17, 2, 99, 0.219);
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
@@ -2400,7 +2462,7 @@ header label:hover{
 .regionPoke{
     display: inline-block;
     /* margin-left: 29vw; */
-    font-size: 0.8em;
+    font-size: 0.7em;
     /* margin-top: 13vh;
     margin-bottom: 2vh;  */
     color: #ffffff;
@@ -2408,7 +2470,8 @@ header label:hover{
 
 }
 .cardsEvolucion{
-    background: #016ae2;
+    /* background: #016ae2; */
+    background: radial-gradient(closest-side, #3f87a6, #d9dfecb2, #016ae2f1);
     text-align: center;
     margin: 0;
     border-radius: 10px;
@@ -2463,38 +2526,41 @@ header label:hover{
     font-size: 1.1em;
     color: rgb(255, 255, 255);
     width: 5vw;
-    margin-left: 1vw;
+    margin-left: 3vw;
 }
 .informationEvolucion{
     display: flex;
-    width: 15.5vw;
+    width: 20vw;
     height:13vh;
     font-size: 14px;
     text-align: center;
     padding-top: 1vh;
-    margin-left: 2.3vw;
+    margin-left:0;
     align-items: stretch;
-    background: #cab8cfc2; 
+    background: #016ae279; 
     border-radius: 5px;
-    color: #574002;
+    backdrop-filter: blur(25px);
 }
 .atributesCandy{
-    margin-right: 0.6vw;
+    /* margin-right: 0.6vw; */
+    display: flex;
     text-transform: capitalize;
     color: rgb(255, 255, 255);
     width: 7vw;
     padding-left: 1.5vw;
-    text-align: left;
+    /* text-align: left; */
     margin-top: 1vh;
     width: 8vw;
+    text-align: center;
 }
 .btn-busqueda-batalla{
     border-radius: 5px;
     /* border-color: rgb(177, 127, 3); */
+    border:0;
 }
 .btn-busqueda-evo{
     border-radius: 5px;
-    border-color: rgb(6, 3, 177);
+    border:0;
 }
 .btn-busqueda1{
     border: rgb(1, 28, 146) 2px solid;
@@ -2506,16 +2572,17 @@ header label:hover{
     margin-right: 2vw;
 }
 .btn-busqueda{
-    border: rgb(146, 88, 1) 2px solid;
-    color: white;
+    /* border: rgb(146, 88, 1) 2px solid; */
+    border:0;
+    color: #cc7138;
     height: 4vh;
     width: 6vw;
     border-radius: 5px;
-    background-color: rgb(190, 108, 0);
+    background-color: rgb(240, 240, 240);
    
 }
 .btn-battle{
-    background: rgb(146, 88, 1);
+    background: #CE7A46;
     color: white;
     border: 0;
     height: 4vh;
@@ -2539,13 +2606,13 @@ header label:hover{
     cursor: pointer;
 }
 .btn-busqueda:hover{
-    background-color: rgb(240, 240, 240);
-    color: rgb(146, 88, 1);
+    background-color: #CE7A46;
+    color: #fff4ec;
     cursor: pointer;
 }
 .btn-battle:hover{
     background-color: rgb(240, 240, 240);
-    color: rgb(146, 88, 1);
+    color: #CE7A46;
     cursor: pointer;
 }
 .btn-evo:hover{

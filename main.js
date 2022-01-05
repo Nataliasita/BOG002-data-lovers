@@ -186,6 +186,7 @@ steel_poke.forEach (poke => {
 // funcion Pokemon tipo Agua
 const pokemon_container_typeWater =document.getElementById("pokemon-container-typeWater");
 
+
 const pokemon_water =infoGeneral.filter(general_water);
 const water_poke = pokemon_water
 
@@ -914,12 +915,15 @@ flying_poke.forEach (poke => {
     information_pokemon.appendChild(atributes_pokemon_weight);
 })
 
-function_of_filter ();
+/* function_of_filter ();
 
 function function_of_filter (){
     var checkBoxAll = document.getElementById("checkAll");
     var allTypesPokemon = document.getElementById("allTypes");
 
+    checkBoxAll.addEventListener('click', ()=>{
+        
+    })
     if (checkBoxAll.checked == true){
         allTypesPokemon.style.display = "block";
     } 
@@ -927,44 +931,260 @@ function function_of_filter (){
         allTypesPokemon.style.display = "none";
     }
 }
+ */
+function_org ();
+
+function function_org(){
+    var org_des = document.getElementById('org2');
+    var org_as = document.getElementById('org');
+    var contain_des= document.getElementById('pokemon-container-descendentes');
+    var contain_as= document.getElementById('pokemon-container');
+
+    org_as.addEventListener ('click', () =>{
+        if(org_as.checked === true){
+            contain_as.style.display = "block";
+        } else{
+            contain_des.style.display = "block";
+        }
+
+    })
+}
+
+
 
 filter_types_pokemon ();
 
 function filter_types_pokemon () {
 
-    let filter_general = document.getElementById("todos");
-    filter_general.onclick =function (){
-        document.querySelector(".interfazInicial").style.display="none";
-        document.querySelector(".header").style.display="none"; 
-        document.querySelector(".container").style.display="block";
-        document.querySelector(".contentHome").style.display="none"; 
-        document.querySelector(".footer1").style.display="none"; 
-        document.querySelector(".contentPokedex").style.display="block";
-        document.querySelector(".pokemon-container").style.display="none";
-        document.querySelector(".pokemon-container-descendentes").style.display="none";
-        document.querySelector(".allTypes").style.display="grid";
-        document.querySelector(".pokemon-container-typeSteel").style.display="grid";
-        document.querySelector(".pokemon-container-typeWater").style.display="grid";
-        document.querySelector(".pokemon-container-typeBug").style.display="grid";
-        document.querySelector(".pokemon-container-typeDragon").style.display="grid";
-        document.querySelector(".pokemon-container-typeElectric").style.display="grid";
-        document.querySelector(".pokemon-container-typeGhost").style.display="grid";
-        document.querySelector(".pokemon-container-typeFire").style.display="grid";
-        document.querySelector(".pokemon-container-typeFairy").style.display="grid";
-        document.querySelector(".pokemon-container-typeIce").style.display="grid";
-        document.querySelector(".pokemon-container-typeFighting").style.display="grid";
-        document.querySelector(".pokemon-container-typeNormal").style.display="grid";
-        document.querySelector(".pokemon-container-typeGrass").style.display="grid";
-        document.querySelector(".pokemon-container-typePsychic").style.display="grid";
-        document.querySelector(".pokemon-container-typeRock").style.display="grid";
-        document.querySelector(".pokemon-container-typeDark").style.display="grid";
-        document.querySelector(".pokemon-container-typeGround").style.display="grid";
-        document.querySelector(".pokemon-container-typePoison").style.display="grid";
-        document.querySelector(".pokemon-container-typeFlying").style.display="grid";
-        document.querySelector(".btn-flotante").style.display="block";
-        document.querySelector(".interfaz_two_pokedex").style.display="none";
-        document.querySelector(".footer2").style.display="block";
-    }
+        let filter_general = document.getElementById("checkAll");
+        let contenedor_typs= document.getElementById("big_container");
+        let all_types_pok= document.querySelector(".allTypes");
+        let pok_bicho= document.querySelector(".interfaz_two_pokedex");
+        let filter1= document.querySelector(".pokemon-container-typeSteel");
+        let id1= document.getElementById("1");
+        let id2= document.getElementById("2");
+        let id3= document.getElementById("3");
+        let id4= document.getElementById("4");
+        let id5= document.getElementById("5");
+        let id6= document.getElementById("6");
+        let id7= document.getElementById("7");
+        let id8= document.getElementById("8");
+        let id9= document.getElementById("9");
+        let id10= document.getElementById("10");
+        let id11= document.getElementById("11");
+        let id12= document.getElementById("12");
+        let id13= document.getElementById("13");
+        let id14= document.getElementById("14");
+        let id15= document.getElementById("15");
+        let id16= document.getElementById("16");
+        let id17= document.getElementById("17");
+        let id18= document.getElementById("18");
+        let filter2= document.querySelector(".pokemon-container-typeWater");
+        let filter3= document.querySelector(".pokemon-container-typeBug");
+        let filter4= document.querySelector(".pokemon-container-typeDragon");
+        let filter5= document.querySelector(".pokemon-container-typeElectric");
+        let filter6= document.querySelector(".pokemon-container-typeGhost");
+        let filter7= document.querySelector(".pokemon-container-typeFire");
+        let filter8= document.querySelector(".pokemon-container-typeFairy");
+        let filter9= document.querySelector(".pokemon-container-typeIce");
+        let filter10= document.querySelector(".pokemon-container-typeFighting");
+        let filter11= document.querySelector(".pokemon-container-typeNormal");
+        let filter12= document.querySelector(".pokemon-container-typeGrass");
+        let filter13= document.querySelector(".pokemon-container-typePsychic");
+        let filter14= document.querySelector(".pokemon-container-typeRock");
+        let filter15= document.querySelector(".pokemon-container-typeDark");
+        let filter16= document.querySelector(".pokemon-container-typeGround");
+        let filter17= document.querySelector(".pokemon-container-typePoison");
+        let filter18= document.querySelector(".pokemon-container-typeFlying");
+        let btn_filter=document.querySelector(".btn-flotante");
+        let order_a=document.querySelector(".pokemon-container");
+        let order_b=document.querySelector(".pokemon-container-descendentes");
+
+    filter_general.addEventListener('click', ()=>{
+        if(filter_general.checked === true){
+            all_types_pok.style.display="grid";
+            pok_bicho.style.display="none";
+            order_a.style.display="none";
+            order_b.style.display="none";
+            btn_filter.style.display="block"
+            filter1.style.display="grid";
+            filter2.style.display="grid";
+            filter3.style.display="grid";
+            filter4.style.display="grid";
+            filter5.style.display="grid";
+            filter6.style.display="grid";
+            filter7.style.display="grid";
+            filter8.style.display="grid";
+            filter9.style.display="grid";
+            filter10.style.display="grid";
+            filter11.style.display="grid";
+            filter12.style.display="grid";
+            filter13.style.display="grid";
+            filter14.style.display="grid";
+            filter15.style.display="grid";
+            filter16.style.display="grid";
+            filter17.style.display="grid";
+            filter18.style.display="grid";
+            contenedor_typs.style.display="none";
+        }else{
+            all_types_pok.style.display="none";
+        }
+
+    })
+
+    id1.addEventListener('click', ()=>{
+        if(id1.checked === true){
+            all_types_pok.style.display="block";
+            pok_bicho.style.display="none";
+            order_a.style.display="none";
+            order_b.style.display="none";
+            filter1.style.display="grid";
+            filter2.style.display="none";
+            filter3.style.display="none";
+            filter4.style.display="none";
+            filter5.style.display="none";
+            filter6.style.display="none";
+            filter7.style.display="none";
+            filter8.style.display="none";
+            filter9.style.display="none";
+            filter10.style.display="none";
+            filter11.style.display="none";
+            filter12.style.display="none";
+            filter13.style.display="none";
+            filter14.style.display="none";
+            filter15.style.display="none";
+            filter16.style.display="none";
+            filter17.style.display="none";
+            filter18.style.display="none";
+        }
+
+
+    });
+
+  id2.addEventListener('click', ()=>{
+        if(id2.checked === true){
+            all_types_pok.style.display="block";
+            pok_bicho.style.display="none";
+            btn_filter.style.display="block"
+            order_a.style.display="none";
+            order_b.style.display="none";
+            filter1.style.display="none";
+            filter2.style.display="grid";
+            filter3.style.display="none";
+            filter4.style.display="none";
+            filter5.style.display="none";
+            filter6.style.display="none";
+            filter7.style.display="none";
+            filter8.style.display="none";
+            filter9.style.display="none";
+            filter10.style.display="none";
+            filter11.style.display="none";
+            filter12.style.display="none";
+            filter13.style.display="none";
+            filter14.style.display="none";
+            filter15.style.display="none";
+            filter16.style.display="none";
+            filter17.style.display="none";
+            filter18.style.display="none";
+        }else{
+            all_types_pok.style.display="none";
+            
+        }
+
+
+    });
+
+    id3.addEventListener('click', ()=>{
+        if(id3.checked === true){
+            all_types_pok.style.display="block";
+            pok_bicho.style.display="none";
+            btn_filter.style.display="block"
+            order_a.style.display="none";
+            order_b.style.display="none";
+            filter1.style.display="none";
+            filter2.style.display="none";
+            filter3.style.display="grid";
+            filter4.style.display="none";
+            filter5.style.display="none";
+            filter6.style.display="none";
+            filter7.style.display="none";
+            filter8.style.display="none";
+            filter9.style.display="none";
+            filter10.style.display="none";
+            filter11.style.display="none";
+            filter12.style.display="none";
+            filter13.style.display="none";
+            filter14.style.display="none";
+            filter15.style.display="none";
+            filter16.style.display="none";
+            filter17.style.display="none";
+            filter18.style.display="none";
+        }else{
+            all_types_pok.style.display="none";
+        }
+
+
+    });
+    
+    id4.addEventListener('click', ()=>{
+        if(id4.checked === true){
+            all_types_pok.style.display="block";
+            pok_bicho.style.display="none";
+            btn_filter.style.display="block";
+            order_a.style.display="none";
+            order_b.style.display="none";
+            filter4.style.display="grid";
+            filter1.style.display="none";
+            filter2.style.display="none";
+            filter3.style.display="none";
+            filter5.style.display="none";
+            filter6.style.display="none";
+            filter7.style.display="none";
+            filter8.style.display="none";
+            filter9.style.display="none";
+            filter10.style.display="none";
+            filter11.style.display="none";
+            filter12.style.display="none";
+            filter13.style.display="none";
+            filter14.style.display="none";
+            filter15.style.display="none";
+            filter16.style.display="none";
+            filter17.style.display="none";
+            filter18.style.display="none";
+        }else{
+            all_types_pok.style.display="none";
+        }
+
+
+    });
+
+
+}
+/* 
+   document.querySelector(".allTypes").style.display="grid";
+    document.querySelector(".pokemon-container-typeSteel")
+    document.querySelector(".pokemon-container-typeWater")
+    document.querySelector(".pokemon-container-typeBug")
+    document.querySelector(".pokemon-container-typeDragon")
+    document.querySelector(".pokemon-container-typeElectric")
+    document.querySelector(".pokemon-container-typeGhost")
+    document.querySelector(".pokemon-container-typeFire")
+    document.querySelector(".pokemon-container-typeFairy")
+    document.querySelector(".pokemon-container-typeIce")
+    document.querySelector(".pokemon-container-typeFighting")
+    document.querySelector(".pokemon-container-typeNormal")
+    document.querySelector(".pokemon-container-typeGrass")
+    document.querySelector(".pokemon-container-typePsychic")
+    document.querySelector(".pokemon-container-typeRock")
+    document.querySelector(".pokemon-container-typeDark")
+    document.querySelector(".pokemon-container-typeGround")
+    document.querySelector(".pokemon-container-typePoison")
+    document.querySelector(".pokemon-container-typeFlying") 
+
+
+
+    
+
 
     let filter_steel = document.getElementById("acero");
     filter_steel.onclick =function (){
@@ -1254,8 +1474,8 @@ function filter_types_pokemon () {
         document.querySelector(".interfaz_two_pokedex").style.display="none";
         document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".footer2").style.display="block";
-    }
-}
+    } 
+ */
 
 //Funcion Interfaz Batalla
 
@@ -1403,7 +1623,7 @@ infoGeneral.forEach (poke => {
     type1_pokemon_evolucion.className = "typesPokeEvolucion";
     information_pokemon_evolucion.appendChild(type1_pokemon_evolucion);
     const atributes_evolucion_candy =document.createElement("p");
-    atributes_evolucion_candy.textContent = "Caramelos : "+ poke.evolution.candy;
+    atributes_evolucion_candy.textContent = "Caramelos "+ poke.evolution.candy;
     atributes_evolucion_candy.className = "atributesCandy";
     information_pokemon_evolucion.appendChild(atributes_evolucion_candy);
 
@@ -1490,7 +1710,7 @@ function pages () {
         document.querySelector(".footer1").style.display="none"; 
         document.querySelector(".contentPokedex").style.display="none";
         document.querySelector(".interfaz_two_pokedex").style.display="none";
-        document.querySelector(".pokemon-container-descendentes").style.display="none";
+        document.querySelector(".pokemon-container-descendentes").style.display="none";  
         document.querySelector(".footer2").style.display="none"; 
         document.querySelector(".contentBatalla").style.display="block";
         document.querySelector(".footer3").style.display="block"; 
