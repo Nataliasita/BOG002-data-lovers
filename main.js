@@ -120,6 +120,7 @@ function order_pokemon (){
         document.querySelector(".allTypes").style.display="none";
         document.querySelector(".btn-flotante").style.display="block";
         document.querySelector(".interfaz_two_pokedex").style.display="none";
+
     }
     let order_descendentes = document.getElementById("descendentes");
     order_descendentes.onclick =function (){
@@ -1056,6 +1057,8 @@ function filter_types_pokemon () {
             filter16.style.display="none";
             filter17.style.display="none";
             filter18.style.display="none";
+        }else{
+            all_types_pok.style.display="none";
         }
 
 
@@ -1668,6 +1671,8 @@ function pages () {
         document.querySelector(".contentPokedex").style.display="none";
         document.querySelector(".contentEvolucion").style.display="none";
         document.querySelector(".contentBatalla").style.display="none";
+        document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".allTypes").style.display="none";
 
     }
 
@@ -1678,11 +1683,14 @@ function pages () {
         document.querySelector(".contentHome").style.display="block"; 
         document.querySelector(".footer1").style.display="block"; 
         document.querySelector(".contentPokedex").style.display="none";
+        document.querySelector(".pokemon-container").style.display="none";
         document.querySelector(".contentBatalla").style.display="none";
+        document.querySelector(".pokemon-container-descendentes").style.display="none";
         document.querySelector(".footer3").style.display="none"; 
         document.querySelector(".contentEvolucion").style.display="none";
         document.querySelector(".footer4").style.display="none"; 
         document.querySelector(".interfaz_two_pokedex").style.display="none";
+        document.querySelector(".allTypes").style.display="none";
     }
 
     let mainPokedex = document.getElementById("pokedex");

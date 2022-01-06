@@ -295,7 +295,7 @@ header label:hover{
     width: 100vw;
     height: 140vh;
     /* background: radial-gradient(#3e004d88,#f2f3ff); */
-    background: radial-gradient(circle at 100%, rgb(241, 241, 241), rgb(235, 235, 235) 50%, #3e004d88 75%, #3e004d88 75%);
+    background: #fffafa;
     /* background-color: #f1f1f1; */
     background-repeat: no-repeat;
     padding: 0;
@@ -304,11 +304,21 @@ header label:hover{
     color: white;
     font-weight: bold;
 }
+.contentHome::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 140vh;
+    background-image: url('images/gas.png');
+    background-repeat: repeat;
+    background-size: 2%;
+    opacity: 0.19;
+}
 .item1{
     position: absolute;
     width: 21vw;
     height: 46vh;
-    background-color: #3e004d98;
+    background-color: #3e004daf;
     left: 13vw;
     top: 68vh;
     padding: 3vh 0;
@@ -316,7 +326,7 @@ header label:hover{
     text-align: center;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     transform: rotate(-90deg);
-    
+    backdrop-filter: blur(6px);
 }
 .linkH{
     text-decoration: none;
@@ -335,7 +345,7 @@ header label:hover{
     position: absolute;
     width: 21vw;
     height: 46vh;
-    background-color: #3e004d98;
+    background-color: #3e004daf;
     right: 15vw;
     top:  68vh;
     align-items: flex-start;
@@ -343,6 +353,7 @@ header label:hover{
     padding: 3vh 1vw;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     transform: rotate(-90deg);
+    backdrop-filter: blur(6px);
 }
 .item2:hover{
     background: #3e004d;
@@ -358,7 +369,7 @@ header label:hover{
     position: absolute;
     width: 21vw;
     height: 46vh;
-    background-color: #3e004d98;
+    background-color: #3e004daf;
     left: 13vw;
     top: 141vh;
     align-items: flex-end;
@@ -366,6 +377,7 @@ header label:hover{
     padding: 3vh 1vw;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     transform: rotate(-90deg);
+    backdrop-filter: blur(6px);
 
 }
 .item3:hover{
@@ -382,7 +394,7 @@ header label:hover{
     position: absolute;
     width: 21vw;
     height: 46vh;
-    background-color: #3e004d98;
+    background-color: #3e004daf;
     right: 15vw;
     top: 141vh;
     padding: 3vh 1vw;
@@ -390,7 +402,7 @@ header label:hover{
     text-align: center;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     transform: rotate(-90deg);
-
+    backdrop-filter: blur(6px);
 }
 .item4:hover{
     background: #3e004d;
@@ -409,7 +421,7 @@ header label:hover{
     right: 37vw;
     top: 93vh;
     align-items: center;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 }
 .footer1{
     position: absolute;
@@ -572,11 +584,26 @@ header label:hover{
     width: 70vw;
     display: flex;
     position: absolute;
-    left: 20vw;
+    left: 23vw;
     top:31vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: url('images/page.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    opacity: 0.97;
+    z-index: 50;
+}
+.interfaz_two_pokedex::before{
+    content: "";
+    position: absolute;
+    background-color: #0505052d;
+    height: 66vh;
+    width: 68vw;
+    left: 1vw;
+    top: 2vh;
+    border-radius: 100px;
 }
 
 
@@ -586,14 +613,18 @@ header label:hover{
     display: flex;
     right: 10vw;
     top:2vh;
+    z-index: 51;
 }
 .objeto_3 {
     height: 35vh;
     left: 9vw;
+    top: 2vh;
     width: 30vw;
-    color: #4e4e4e;
+    color: #ffffff;
     /* background: #d4d4d4d8; */
-    background: linear-gradient( #e9e9e9ec ,#858585e3);
+    /* background: linear-gradient( #e9e9e9 ,#858585a8); */
+    backdrop-filter: blur(25px);
+    background-color: #fdf6ff31;
     /* background-image: url('images/plan2.jpg');
     background-position-y: bottom;
     background-position-x: right;
@@ -606,6 +637,7 @@ header label:hover{
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 80% 91%, 50% 75%, 0% 75%);
     border-radius: 15px;
     opacity: 0.9;
+    z-index: 51;
 }
 .pokemon-container{
     display: grid;
