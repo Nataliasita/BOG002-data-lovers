@@ -295,7 +295,7 @@ header label:hover{
     width: 100vw;
     height: 140vh;
     /* background: radial-gradient(#3e004d88,#f2f3ff); */
-    background: #fffafa;
+    background: #fff7f7;
     /* background-color: #f1f1f1; */
     background-repeat: no-repeat;
     padding: 0;
@@ -310,9 +310,11 @@ header label:hover{
     width: 100vw;
     height: 140vh;
     background-image: url('images/gas.png');
+    background-color: #38004950;
     background-repeat: repeat;
     background-size: 2%;
     opacity: 0.19;
+    clip-path: polygon(40% 0, 66% 0, 100% 20%, 92% 72%, 52% 60%, 86% 100%, 18% 95%, 0% 70%, 20% 33%, 2% 13%);
 }
 .item1{
     position: absolute;
